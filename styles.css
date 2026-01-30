@@ -1,4 +1,4 @@
-P/* ===========================
+/* ===========================
    RESET E VARIÁVEIS GLOBAIS
    =========================== */
 
@@ -21,6 +21,12 @@ P/* ===========================
     --transition: all 0.3s ease;
 }
 
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Previne o scroll horizontal em ambos */
+    position: relative;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -30,8 +36,6 @@ body {
     background-color: var(--dark-bg);
     color: var(--text-primary);
     line-height: 1.6;
-    overflow-x: hidden;
-    /* Garante que nada saia da tela lateralmente */
 }
 
 /* Regras Globais de Segurança para Imagens e Contentores */
@@ -41,6 +45,7 @@ canvas,
 svg {
     max-width: 100%;
     height: auto;
+    display: block; /* Remove espaços extras abaixo de imagens */
 }
 
 .container,
@@ -50,7 +55,6 @@ svg {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 1.5rem;
-    /* Padding lateral consistente */
 }
 
 /* ===========================
@@ -61,10 +65,11 @@ svg {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: rgba(15, 23, 42, 0.8);
+    background-color: rgba(15, 23, 42, 0.9); /* Aumentada a opacidade para melhor leitura */
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--dark-border);
     padding: 1rem 0;
+    width: 100%;
 }
 
 .nav-container {
@@ -121,6 +126,7 @@ svg {
         font-size: 0.85rem;
         flex-wrap: wrap;
         justify-content: center;
+        padding: 0;
     }
 }
 
@@ -214,12 +220,13 @@ svg {
 .hero-image img {
     border-radius: 0.5rem;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+    max-width: 100%;
 }
 
 @media (max-width: 768px) {
     .hero-container {
         grid-template-columns: 1fr;
-        padding: 3rem 0;
+        padding: 3rem 1.5rem; /* Adicionado padding lateral */
         text-align: center;
     }
 
@@ -271,7 +278,7 @@ svg {
 
 .about-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Ajustado para caber melhor em telas pequenas */
     gap: 2rem;
 }
 
@@ -311,7 +318,7 @@ svg {
 .tech-list {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 1rem;
 }
 
@@ -334,9 +341,9 @@ svg {
    =========================== */
 
 .table-responsive {
-    overflow-x: auto;
+    width: 100%;
+    overflow-x: hidden; /* Mudado de auto para hidden para evitar scroll indesejado */
     border-radius: 0.5rem;
-    border: 1px solid var(--dark-border);
 }
 
 .skills-table {
@@ -363,22 +370,8 @@ svg {
     color: var(--text-secondary);
 }
 
-.skills-table tbody tr:hover {
-    background-color: rgba(14, 165, 233, 0.05);
-}
-
-.level {
-    color: var(--secondary-color);
-    font-weight: 500;
-}
-
 /* Transformação da Tabela para Telemóvel */
 @media (max-width: 650px) {
-    .table-responsive {
-        border: none;
-        overflow-x: visible;
-    }
-
     .skills-table,
     .skills-table thead,
     .skills-table tbody,
@@ -386,6 +379,7 @@ svg {
     .skills-table td,
     .skills-table tr {
         display: block;
+        width: 100%;
     }
 
     .skills-table thead tr {
@@ -399,14 +393,13 @@ svg {
         margin-bottom: 1.5rem;
         border-radius: 0.5rem;
         background: rgba(30, 41, 59, 0.5);
-        overflow: hidden;
     }
 
     .skills-table td {
         border: none;
         border-bottom: 1px solid var(--dark-border);
         position: relative;
-        padding-left: 45%;
+        padding-left: 40%; /* Ajustado */
         text-align: right;
         min-height: 3rem;
         display: flex;
@@ -421,25 +414,15 @@ svg {
     .skills-table td:before {
         position: absolute;
         left: 1rem;
-        width: 40%;
-        padding-right: 10px;
-        white-space: nowrap;
+        width: 35%;
         text-align: left;
         font-weight: bold;
         color: var(--primary-color);
     }
 
-    .skills-table td:nth-of-type(1):before {
-        content: "Categoria";
-    }
-
-    .skills-table td:nth-of-type(2):before {
-        content: "Tecnologia";
-    }
-
-    .skills-table td:nth-of-type(3):before {
-        content: "Nível";
-    }
+    .skills-table td:nth-of-type(1):before { content: "Categoria"; }
+    .skills-table td:nth-of-type(2):before { content: "Tecnologia"; }
+    .skills-table td:nth-of-type(3):before { content: "Nível"; }
 }
 
 /* ===========================
@@ -448,7 +431,7 @@ svg {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
 }
 
@@ -462,45 +445,13 @@ svg {
     flex-direction: column;
 }
 
-.project-card:hover {
-    border-color: var(--primary-color);
-    background-color: rgba(30, 41, 59, 0.9);
-    transform: translateY(-5px);
-}
-
-.project-icon {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.project-card h3 {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-    color: var(--text-primary);
-}
-
-.project-card p {
-    color: var(--text-secondary);
-    margin-bottom: 1rem;
-    flex-grow: 1;
-}
-
-.project-details {
-    font-size: 0.875rem;
-    color: var(--text-muted);
-}
-
-.project-details p {
-    margin: 0.5rem 0;
-}
-
 /* ===========================
    SEÇÃO ESTUDOS
    =========================== */
 
-.studies-grid {
+.study-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
 }
 
@@ -511,98 +462,14 @@ svg {
     padding: 2rem;
 }
 
-.study-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-    color: var(--text-primary);
-}
-
-.study-item {
-    margin-bottom: 1.5rem;
-}
-
-.study-label {
-    color: var(--primary-color);
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    display: block;
-}
-
-.study-item p:last-child {
-    color: var(--text-secondary);
-    line-height: 1.8;
-}
-
-.certification {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-    align-items: flex-start;
-}
-
-.cert-dot {
-    width: 0.75rem;
-    height: 0.75rem;
-    background-color: var(--secondary-color);
-    border-radius: 50%;
-    margin-top: 0.5rem;
-    flex-shrink: 0;
-}
-
-.cert-name {
-    font-weight: 600;
-    color: var(--text-primary);
-    margin-bottom: 0.25rem;
-}
-
 /* ===========================
    SEÇÃO BLOG
    =========================== */
 
 .blog-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 2rem;
-}
-
-.blog-card {
-    background-color: rgba(30, 41, 59, 0.7);
-    border: 1px solid var(--dark-border);
-    border-radius: 0.5rem;
-    padding: 2rem;
-    transition: var(--transition);
-    display: flex;
-    flex-direction: column;
-}
-
-.blog-card:hover {
-    border-color: var(--primary-color);
-    background-color: rgba(30, 41, 59, 0.9);
-}
-
-.blog-card h3 {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-    color: var(--text-primary);
-    line-height: 1.4;
-}
-
-.blog-card p {
-    color: var(--text-secondary);
-    margin-bottom: 1.5rem;
-    font-size: 0.95rem;
-}
-
-.blog-link {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.875rem;
-    transition: var(--transition);
-}
-
-.blog-link:hover {
-    color: var(--secondary-color);
 }
 
 /* ===========================
@@ -611,7 +478,7 @@ svg {
 
 .contact-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 2rem;
     max-width: 1000px;
     margin: 0 auto;
@@ -628,35 +495,12 @@ svg {
     transition: var(--transition);
 }
 
-.contact-card:hover {
-    border-color: var(--primary-color);
-    background-color: rgba(30, 41, 59, 0.9);
-    transform: translateY(-5px);
-}
-
-.contact-icon {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    display: block;
-}
-
-.contact-card h3 {
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-    color: var(--text-primary);
-}
-
-.contact-card p {
-    font-size: 0.875rem;
-    color: var(--text-muted);
-}
-
 /* ===========================
    RODAPÉ
    =========================== */
 
 .footer {
-    background-color: rgba(15, 23, 42, 0.8);
+    background-color: rgba(15, 23, 42, 0.9);
     border-top: 1px solid var(--dark-border);
     padding: 2rem 1rem;
     text-align: center;
@@ -665,7 +509,7 @@ svg {
 }
 
 /* ===========================
-   RESPONSIVIDADE ADICIONAL
+   RESPONSIVIDADE ADICIONAL E CORREÇÕES FINAIS
    =========================== */
 
 @media (max-width: 768px) {
@@ -681,7 +525,8 @@ svg {
     .about-grid,
     .projects-grid,
     .blog-grid,
-    .contact-grid {
+    .contact-grid,
+    .study-grid {
         grid-template-columns: 1fr;
     }
 
@@ -697,6 +542,7 @@ svg {
 
     .hero-buttons {
         flex-direction: column;
+        width: 100%;
     }
 
     .btn {
@@ -708,7 +554,12 @@ svg {
         font-size: 1.5rem;
     }
 
-    .container {
+    .container, .hero-container, .nav-container {
         padding: 0 1rem;
+    }
+    
+    /* Garante que nada transborde em telas muito pequenas */
+    * {
+        max-width: 100vw;
     }
 }
