@@ -1,4 +1,4 @@
-# 🚀 Cloud & DevOps Lab - deldotore.com
+# 📂 Cloud & DevOps Lab - deldotore.com
 
 [![Deploy Website](https://github.com/deldotore-r/deldotore_site/actions/workflows/deploy.yml/badge.svg)](https://github.com/deldotore-r/deldotore_site/actions)
 
@@ -15,6 +15,18 @@ O pipeline automatizado garante que a infraestrutura reflita o estado do código
 1.  **Sincronização:** `aws s3 sync` para atualização inteligente dos ativos.
 2.  **Invalidação:** Purge automático do cache do CloudFront via AWS CLI.
 3.  **Segurança:** Autenticação via GitHub Secrets para proteção de chaves IAM.
+
+## 🔬 Laboratórios e Estudos Ativos (2026)
+Além da infraestrutura deste site, utilizo este ecossistema para homologar práticas de:
+* **Orquestração:** Criação de DAGs complexas com **Apache Airflow**.
+* **Containers:** Virtualização e padronização de ambientes com **Docker**.
+* **Escalabilidade:** Gerenciamento de workloads em **Kubernetes (K8s)**.
+* **IaC:** Evolução de módulos de **Terraform** para provisionamento multi-region.
+
+## 📈 Melhorias Futuras
+- [ ] Implementar OIDC para autenticação GitHub <-> AWS (sem chaves estáticas).
+- [ ] Adicionar testes de infraestrutura (Terratest).
+- [ ] Implementar monitoramento de custos (FinOps) via AWS Budgets.
 
 ---
 📫 **Contato:** [LinkedIn](https://www.linkedin.com/in/reinaldo-del-dotore/)
