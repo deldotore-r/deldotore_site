@@ -3,7 +3,7 @@ name: Deploy Website
 on:
   push:
     branches:
-      - main  # Ou a sua branch principal
+      - main  # Implementação de GitOps: a branch main é a 'única fonte de verdade' para o ambiente de produção.
 
 jobs:
   deploy:
@@ -11,19 +11,25 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v3 # Garante que o Runner tenha acesso ao código-fonte atualizado.
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
+          # Segurança: Uso de GitHub Secrets para evitar exposição de chaves IAM. 
+          # Recomendação futura: Migrar para OIDC para autenticação sem chaves estáticas.
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ secrets.AWS_REGION }}
 
       - name: Sync files to S3
         run: |
+          # --delete: Crucial para Gestão de Estado. Remove arquivos no bucket que não existem mais no repositório.
+          # --exclude: Impede o upload de metadados do Git e definições de workflow para o ambiente público.
           aws s3 sync . s3://${{ secrets.S3_BUCKET_NAME }} --delete --exclude ".git/*" --exclude ".github/*"
 
       - name: Invalidate CloudFront cache
         run: |
+          # Purge de Cache (Edge Computing): Força a rede global da AWS a descartar versões antigas.
+          # O path "/*" garante que o usuário final receba a versão mais recente imediatamente após o deploy.
           aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
