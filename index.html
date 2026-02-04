@@ -8,7 +8,6 @@
 </head>
 <body>
 
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">REINALDO DEL DOTORE</div>
@@ -23,7 +22,6 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="inicio" class="hero">
         <div class="hero-container">
             <div class="hero-content">
@@ -45,7 +43,6 @@
         </div>
     </section>
 
-    <!-- Sobre Section -->
     <section id="sobre" class="section section-dark">
         <div class="container">
             <h2 class="section-title">Quem sou e o que busco</h2>
@@ -85,7 +82,6 @@
         </div>
     </section>
 
-    <!-- Competências Section -->
     <section id="competencias" class="section">
         <div class="container">
             <h2 class="section-title">
@@ -106,50 +102,43 @@
                             <td>Sistema Operacional</td>
                             <td>Linux (Xubuntu, Ubuntu, Debian)</td>
                             <td class="level">
-                                Uso diário, administração completa,
-                                shell scripting e automação de tarefas.
-                                Experiência prática em deployment
-                                e integração com ferramentas DevOps.
+                                Uso diário, administração completa, shell scripting e automação de tarefas.
+                                Experiência prática em deployment e integração com ferramentas DevOps.
                             </td>
                         </tr>
                         <tr>
                             <td>Infraestrutura como Código</td>
                             <td>Terraform</td>
                             <td class="level">
-                                Desenvolvendo módulos, provisionamento
-                                reproduzível e pipelines CI/CD.
+                                Desenvolvendo módulos, provisionamento reproduzível e pipelines CI/CD.
                             </td>
                         </tr>
                         <tr>
                             <td>Cloud / Serviços</td>
                             <td>AWS (S3, IAM, EC2, CloudFront, VPC)</td>
                             <td class="level">
-                                Ambiente de testes, otimização de custos
-                                e práticas de segurança avançadas.
+                                Ambiente de testes, otimização de custos e práticas de segurança avançadas.
                             </td>
                         </tr>
                         <tr>
                             <td>Contêineres & Imagens</td>
                             <td>Docker</td>
                             <td class="level">
-                                Criação e execução de imagens;
-                                estudos iniciais de orquestração.
+                                Criação e execução de imagens; estudos iniciais de orquestração.
                             </td>
                         </tr>
                         <tr>
                             <td>Controle de Versão</td>
                             <td>Git / GitHub</td>
                             <td class="level">
-                                Uso cotidiano; branches, PRs
-                                e workflows simples.
+                                Uso cotidiano; branches, PRs e workflows simples.
                             </td>
                         </tr>
                         <tr>
                             <td>Networking & Segurança</td>
                             <td>Fundamentos e práticas aplicadas</td>
                             <td class="level">
-                                Configuração de VPNs, firewalls
-                                e boas práticas de IAM.
+                                Configuração de VPNs, firewalls e boas práticas de IAM.
                             </td>
                         </tr>
                     </tbody>
@@ -158,7 +147,6 @@
         </div>
     </section>
 
-    <!-- Projetos Section -->
     <section id="projetos" class="section section-dark">
         <div class="container">
             <h2 class="section-title">Projetos & Demonstrações Práticas</h2>
@@ -178,8 +166,7 @@
                         <p><strong>Arquitetura:</strong> S3 + CloudFront + HTTPS</p>
                         <p><strong>Foco:</strong> Desempenho e custo mínimo</p>
                         <p>
-                            <a href="https://www.linkedin.com/pulse/como-hospedar-um-site-est%C3%A1tico-na-aws-por-menos-de-2m%C3%AAs-del-dotore-4jxve/"
-                               target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.linkedin.com/pulse/como-hospedar-um-site-est%C3%A1tico-na-aws-por-menos-de-2m%C3%AAs-del-dotore-4jxve/" target="_blank" rel="noopener noreferrer">
                                 Leia o artigo completo →
                             </a>
                         </p>
@@ -192,15 +179,13 @@
                     <p>
                         Projeto demonstrativo de Infraestrutura como Código na AWS.
                         Provisionamento reproduzível de EC2, Security Group e S3,
-                        com foco em boas práticas, custo controlado e
-                        limpeza completa do ambiente.
+                        com foco em boas práticas, custo controlado e limpeza completa do ambiente.
                     </p>
                     <div class="project-details">
                         <p><strong>Ferramentas:</strong> Terraform, AWS CLI</p>
                         <p><strong>Resultado:</strong> Ambiente versionado, efêmero e replicável</p>
                         <p>
-                            <a href="https://github.com/deldotore-r/aws-basic-infra-terraform"
-                               target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/deldotore-r/aws-basic-infra-terraform" target="_blank" rel="noopener noreferrer">
                                 Ver repositório no GitHub →
                             </a>
                         </p>
@@ -209,79 +194,70 @@
 
                 <div class="project-card">
                     <div class="project-icon">⚙️</div>
-                    <h3>Automação & Deployment</h3>
+                    <h3>Pipeline CI/CD: Automação Total</h3>
                     <p>
-                        Experimentos com containers, pipelines e scripts de automação.
-                        Integração básica CI/CD e testes de deploy automatizado.
+                        Implementação de uma esteira de entrega contínua utilizando GitHub Actions.
+                        O fluxo automatiza o deploy seguro, sincroniza ativos no S3 e gerencia a
+                        invalidação de cache global no CloudFront a cada push.
                     </p>
                     <div class="project-details">
-                        <p><strong>Tecnologias:</strong> Docker, Bash, CI/CD</p>
-                        <p><strong>Objetivo:</strong> Demonstrar execução prática</p>
+                        <p><strong>Tecnologias:</strong> GitHub Actions, AWS CLI, YAML</p>
+                        <p><strong>Destaque:</strong> Invalidação programática de cache em 15s</p>
+                        <p>
+                            <a href="https://www.linkedin.com/pulse/al%C3%A9m-do-c%C3%B3digo-anatomia-de-uma-pipeline-cicd-com-aws-e-del-dotore-3rwwe/?trackingId=Jc6Qyu7OQbijHxXILEwmHw%3D%3D" target="_blank" rel="noopener noreferrer">
+                                Ver arquitetura do pipeline →
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Estudos Section -->
     <section class="section">
         <div class="container">
             <h2 class="section-title">Estudos & Formação</h2>
 
             <div class="studies-grid">
                 <div class="study-card">
-                    <h3>Aprendizado Contínuo</h3>
-
-                    <div class="study-item">
-                        <p class="study-label">Estudo Atual (2026)</p>
-                        <p>
-                            <strong>Cloud:</strong> AWS — IAM, S3, CloudFront, VPCs e práticas avançadas de segurança.<br>
-                            <strong>Infraestrutura como Código:</strong> Terraform — módulos, provisionamento reproduzível e pipelines CI/CD.<br>
-                            <strong>Linux:</strong> Administração diária em Xubuntu, shell scripting, automação de tarefas e integração com ferramentas DevOps.
-                        </p>
+                    <h3 class="study-card-title">Aprendizado Contínuo</h3>
+                    <div class="study-entry">
+                        <span class="study-tag">ATUAL</span>
+                        <p><strong>CI/CD:</strong> Pipelines GitHub Actions para deploy serverless.</p>
+                        <p><strong>Cloud:</strong> AWS (IAM, S3, CloudFront, VPC) e Segurança.</p>
+                        <p><strong>IaC:</strong> Terraform (módulos e gestão de estado).</p>
+                        <p><strong>Orquestração & Containers:</strong> Prática contínua em Airflow, Docker e Kubernetes.</p>
                     </div>
-
-                    <div class="study-item">
-                        <p class="study-label">Próximo Objetivo</p>
-                        <p>
-                            Terraform avançado, pipelines CI/CD completos,
-                            monitoramento e observabilidade com Prometheus/Grafana,
-                            FinOps e otimização de custos em nuvem.
-                        </p>
+                    <div class="study-entry">
+                        <span class="study-tag next">FUTURO</span>
+                        <p>Monitoramento (Prometheus/Grafana), Kubernetes (K8s) e FinOps.</p>
                     </div>
-
-                    <div class="study-item">
-                        <p class="study-label">Meta Pessoal</p>
-                        <p>
-                            Consolidar competência operacional em Linux e cloud,
-                            entregar infraestruturas seguras, reproduzíveis e escaláveis.
-                        </p>
+                    <div class="study-meta">
+                        <strong>Meta:</strong> Consolidar competência operacional em Linux e Cloud.
                     </div>
                 </div>
 
                 <div class="study-card">
-                    <h3>Certificações</h3>
-
-                    <div class="certification">
-                        <span class="cert-dot"></span>
-                        <p class="cert-name">AWS Cloud Practitioner — em preparação</p>
-                    </div>
-
-                    <div class="certification">
-                        <span class="cert-dot"></span>
-                        <p class="cert-name">AWS Solutions Architect — alvo</p>
-                    </div>
-
-                    <div class="certification">
-                        <span class="cert-dot"></span>
-                        <p class="cert-name">Terraform Associate — estudo em andamento</p>
+                    <h3 class="study-card-title">Certificações</h3>
+                    <div class="cert-list">
+                        <div class="cert-item">
+                            <span class="cert-status preparing"></span>
+                            <p>AWS Cloud Practitioner (Preparação)</p>
+                        </div>
+                        <div class="cert-item">
+                            <span class="cert-status target"></span>
+                            <p>AWS Solutions Architect (Alvo)</p>
+                        </div>
+                        <div class="cert-item">
+                            <span class="cert-status in-progress"></span>
+                            <p>Terraform Associate (Em andamento)</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Blog Section -->
     <section id="blog" class="section section-dark">
         <div class="container">
             <h2 class="section-title">Blog & Artigos Técnicos</h2>
@@ -290,9 +266,9 @@
 
             <div class="blog-grid">
                 <article class="blog-card">
-                    <h3>Configurando Distribuição CloudFront para Site Estático</h3>
-                    <p>Passo a passo para configurar CloudFront para sites estáticos.</p>
-                    <a href="#" class="blog-link">Ler artigo →</a>
+                    <h3>Anatomia de uma Pipeline CI/CD com AWS</h3>
+                    <p>Como orquestrar GitHub Actions, S3 e CloudFront para entregas globais resilientes e automatizadas.</p>
+                    <a href="https://www.linkedin.com/pulse/al%C3%A9m-do-c%C3%B3digo-anatomia-de-uma-pipeline-cicd-com-aws-e-del-dotore-3rwwe/?trackingId=Jc6Qyu7OQbijHxXILEwmHw%3D%3D" class="blog-link">Ler artigo →</a>
                 </article>
 
                 <article class="blog-card">
@@ -316,7 +292,6 @@
         </div>
     </section>
 
-    <!-- Contato Section -->
     <section id="contato" class="section">
         <div class="container">
             <h2 class="section-title">Vamos conversar tecnicamente</h2>
@@ -328,37 +303,27 @@
                     <p>deldotore@gmail.com</p>
                 </a>
 
-                <a href="https://www.linkedin.com/in/reinaldo-del-dotore/"
-                   target="_blank" rel="noopener noreferrer"
-                   class="contact-card">
+                <a href="https://www.linkedin.com/in/reinaldo-del-dotore/" target="_blank" rel="noopener noreferrer" class="contact-card">
                     <div class="contact-icon">💼</div>
                     <h3>LinkedIn</h3>
                     <p>Meu Perfil</p>
                 </a>
 
-                <a href="https://github.com/deldotore-r"
-                   target="_blank" rel="noopener noreferrer"
-                   class="contact-card">
+                <a href="https://github.com/deldotore-r" target="_blank" rel="noopener noreferrer" class="contact-card">
                     <div class="contact-icon">🔗</div>
                     <h3>GitHub</h3>
                     <p>Meus Repositórios</p>
                 </a>
 
-                <a href="docs/deldotore.pdf" 
-                   class="contact-card" 
-                   target="_blank" 
-                   rel="noopener noreferrer" 
-                   download>
+                <a href="docs/deldotore.pdf" class="contact-card" target="_blank" rel="noopener noreferrer" download>
                     <div class="contact-icon">📕</div>
                     <h3>CV</h3>
                     <p>Download PDF</p>
                 </a>
-
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <p>&copy; deldotore 2026</p>
