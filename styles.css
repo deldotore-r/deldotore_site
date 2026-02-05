@@ -188,11 +188,6 @@ img {
 .btn-primary { background: var(--primary-color); color: white; }
 .btn-secondary { border: 2px solid var(--primary-color); color: var(--primary-color); }
 
-.hero-image img {
-    border-radius: 0.5rem;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
-}
-
 /* ===========================
    ESTRUTURA DE SEÇÕES E GRIDS
    =========================== */
@@ -201,7 +196,6 @@ img {
 .section-dark { background-color: rgba(30, 41, 59, 0.5); }
 .section-title { font-size: 2.5rem; font-weight: bold; margin-bottom: 3rem; text-align: center; }
 
-/* Grid Genérica para Sobre, Projetos e Blog */
 .about-grid, .projects-grid, .blog-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -216,21 +210,8 @@ img {
     transition: var(--transition);
 }
 
-.about-card:hover, .project-card:hover {
-    border-color: var(--primary-color);
-}
-
 /* ===========================
-   TABELA DE COMPETÊNCIAS
-   =========================== */
-
-.table-responsive { width: 100%; overflow-x: auto; border-radius: 0.5rem; }
-.skills-table { width: 100%; border-collapse: collapse; background: rgba(30, 41, 59, 0.3); }
-.skills-table th { padding: 1rem; text-align: left; color: var(--primary-color); border-bottom: 2px solid var(--dark-border); }
-.skills-table td { padding: 1rem; border-bottom: 1px solid var(--dark-border); color: var(--text-secondary); }
-
-/* ===========================
-   SEÇÃO ESTUDOS (GRID 2 COLUNAS)
+   SEÇÃO ESTUDOS
    =========================== */
 
 .studies-grid {
@@ -256,30 +237,31 @@ img {
 .cert-status.in-progress { background: var(--secondary-color); }
 
 /* ===========================
-   SEÇÃO CONTACTO (RESTAURADA E ISOLADA)
+   SEÇÃO CONTACTO (RESTAURADA)
    =========================== */
 
 .contact-grid {
-    display: grid !important; /* Força o comportamento de grid */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
-    gap: 2rem;
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+    gap: 1.5rem;
     max-width: 1100px;
-    margin: 0 auto;
+    margin: 2rem auto 0;
 }
 
 .contact-card {
-    display: flex !important; /* Força o conteúdo a alinhar internamente */
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
     background-color: var(--dark-card);
     border: 1px solid var(--dark-border);
-    border-radius: 0.5rem;
+    border-radius: 0.8rem;
     padding: 2.5rem 1.5rem;
     text-decoration: none;
     color: inherit;
     transition: var(--transition);
     text-align: center;
+    min-height: 180px;
 }
 
 .contact-card:hover {
@@ -291,31 +273,11 @@ img {
 .contact-icon {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-}
-
-.contact-card h3 {
-    margin-bottom: 0.5rem;
-    font-size: 1.25rem;
-}
-
-.contact-card p {
-    color: var(--text-muted);
-    font-size: 0.9rem;
+    display: block;
 }
 
 /* ===========================
-   RODAPÉ
-   =========================== */
-
-.footer {
-    padding: 3rem 0;
-    text-align: center;
-    border-top: 1px solid var(--dark-border);
-    color: var(--text-muted);
-}
-
-/* ===========================
-   RESPONSIVIDADE
+   RESPONSIVIDADE E CORREÇÕES MOBILE
    =========================== */
 
 @media (max-width: 992px) {
@@ -324,17 +286,50 @@ img {
 }
 
 @media (max-width: 768px) {
-    .nav-container { flex-direction: column; gap: 1.5rem; }
+    /* Navbar Mobile: Empilha logo e menu para evitar cortes */
+    .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.75rem 1.25rem;
+    }
+
+    .lang-selector {
+        margin-left: 0;
+        margin-top: 0.5rem;
+        width: fit-content;
+    }
+
     .hero-container { grid-template-columns: 1fr; text-align: center; }
     .hero-image { display: none; }
     .hero-buttons { justify-content: center; }
-    .studies-grid { grid-template-columns: 1fr; }
     
-    .lang-selector { margin-left: 0; margin-top: 0.5rem; }
+    .studies-grid { grid-template-columns: 1fr; }
+
+    /* Força os contactos a serem cartões individuais e largos no mobile */
+    .contact-grid {
+        grid-template-columns: 1fr !important;
+    }
 }
 
 @media (max-width: 480px) {
     .hero-title { font-size: 2rem; }
     .btn { width: 100%; text-align: center; }
-    .contact-grid { grid-template-columns: 1fr !important; }
+    
+    .flag-emoji {
+        font-size: 1.4rem;
+    }
+
+    .section-title { font-size: 1.8rem; }
+}
+
+.footer {
+    padding: 3rem 0;
+    text-align: center;
+    border-top: 1px solid var(--dark-border);
+    color: var(--text-muted);
 }
