@@ -211,7 +211,238 @@ img {
 }
 
 /* ===========================
-   SEÇÃO ESTUDOS
+   SEÇÃO COMPETÊNCIAS MELHORADA
+   =========================== */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.skill-card {
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.8) 0%, rgba(30, 41, 59, 0.6) 100%);
+    border: 1px solid var(--dark-border);
+    border-radius: 0.75rem;
+    padding: 2rem;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--gradient);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--primary-color);
+    background: linear-gradient(135deg, rgba(30, 41, 59, 1) 0%, rgba(30, 41, 59, 0.8) 100%);
+}
+
+.skill-card:hover::before {
+    opacity: 1;
+}
+
+.skill-icon {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    display: inline-block;
+}
+
+.skill-category {
+    font-size: 0.85rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.skill-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+}
+
+.skill-description {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+/* ===========================
+   SEÇÃO ESTUDOS MELHORADA
+   =========================== */
+
+.education-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.education-block {
+    background-color: rgba(30, 41, 59, 0.6);
+    border: 1px solid var(--dark-border);
+    border-radius: 0.75rem;
+    padding: 2.5rem;
+    transition: var(--transition);
+}
+
+.education-block:hover {
+    border-color: var(--primary-color);
+    background-color: rgba(30, 41, 59, 0.8);
+}
+
+.education-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.education-title::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 24px;
+    background: var(--gradient);
+    border-radius: 2px;
+}
+
+.roadmap-entry {
+    margin-bottom: 1.75rem;
+    padding-bottom: 1.75rem;
+    border-bottom: 1px solid var(--dark-border);
+}
+
+.roadmap-entry:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.roadmap-tag {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 4px;
+    background: var(--primary-color);
+    color: white;
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.05em;
+}
+
+.roadmap-tag.future {
+    background: rgba(14, 165, 233, 0.5);
+    border: 1px solid var(--primary-color);
+}
+
+.roadmap-content {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.roadmap-content strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.roadmap-content p {
+    margin-bottom: 0.5rem;
+}
+
+.roadmap-content p:last-child {
+    margin-bottom: 0;
+}
+
+.roadmap-goal {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--dark-border);
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+.roadmap-goal strong {
+    color: var(--primary-color);
+}
+
+.cert-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cert-badge {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: rgba(14, 165, 233, 0.1);
+    border: 1px solid var(--dark-border);
+    border-radius: 0.5rem;
+    transition: var(--transition);
+}
+
+.cert-badge:hover {
+    background: rgba(14, 165, 233, 0.15);
+    border-color: var(--primary-color);
+    transform: translateX(4px);
+}
+
+.cert-status-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    box-shadow: 0 0 8px currentColor;
+}
+
+.cert-status-dot.preparing {
+    background: #facc15;
+    color: #facc15;
+}
+
+.cert-status-dot.target {
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.cert-status-dot.in-progress {
+    background: var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.cert-text {
+    flex: 1;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+.cert-text strong {
+    color: var(--text-primary);
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+/* ===========================
+   SEÇÃO ESTUDOS (ORIGINAL)
    =========================== */
 
 .studies-grid {
@@ -283,6 +514,10 @@ img {
 @media (max-width: 992px) {
     .hero-title { font-size: 2.8rem; }
     .nav-menu { gap: 1rem; }
+    
+    .education-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 768px) {
@@ -309,6 +544,14 @@ img {
     .hero-buttons { justify-content: center; }
     
     .studies-grid { grid-template-columns: 1fr; }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .education-container {
+        grid-template-columns: 1fr;
+    }
 
     /* Força os contactos a serem cartões individuais e largos no mobile */
     .contact-grid {
@@ -325,6 +568,18 @@ img {
     }
 
     .section-title { font-size: 1.8rem; }
+    
+    .education-block {
+        padding: 1.5rem;
+    }
+    
+    .education-title {
+        font-size: 1.25rem;
+    }
+    
+    .skill-card {
+        padding: 1.5rem;
+    }
 }
 
 .footer {

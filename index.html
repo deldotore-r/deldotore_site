@@ -98,61 +98,61 @@
                 Current Tech Stack & Ongoing Learning
             </h2>
 
-            <div class="table-responsive">
-                <table class="skills-table">
-                    <thead>
-                        <tr>
-                            <th>Category</th>
-                            <th>Technologies / Tools</th>
-                            <th>Level / Notes</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Operating System</td>
-                            <td>Linux (Xubuntu, Ubuntu, Debian)</td>
-                            <td class="level">
-                                Daily use, full administration, shell scripting, and task automation. 
-                                Hands-on experience in deployment and DevOps integration.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Infrastructure as Code</td>
-                            <td>Terraform</td>
-                            <td class="level">
-                                Developing modules, reproducible provisioning, and CI/CD pipelines.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Cloud Services</td>
-                            <td>AWS (S3, IAM, EC2, CloudFront, VPC)</td>
-                            <td class="level">
-                                Testing environments, cost optimization, and advanced security practices.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Containers</td>
-                            <td>Docker</td>
-                            <td class="level">
-                                Image creation and management; initial orchestration studies.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Version Control</td>
-                            <td>Git / GitHub</td>
-                            <td class="level">
-                                Daily usage; branching, PRs, and standard workflows.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Networking & Security</td>
-                            <td>Applied Fundamentals</td>
-                            <td class="level">
-                                VPN configuration, firewalls, and IAM best practices.
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">🐧</div>
+                    <div class="skill-category">Operating System</div>
+                    <h3 class="skill-title">Linux</h3>
+                    <p class="skill-description">
+                        Daily use, full administration, shell scripting, and task automation. 
+                        Hands-on experience in deployment and DevOps integration.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">🏗️</div>
+                    <div class="skill-category">Infrastructure as Code</div>
+                    <h3 class="skill-title">Terraform</h3>
+                    <p class="skill-description">
+                        Developing modules, reproducible provisioning, and CI/CD pipelines.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">☁️</div>
+                    <div class="skill-category">Cloud Services</div>
+                    <h3 class="skill-title">AWS</h3>
+                    <p class="skill-description">
+                        Testing environments, cost optimization, and advanced security practices.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">📦</div>
+                    <div class="skill-category">Containers</div>
+                    <h3 class="skill-title">Docker</h3>
+                    <p class="skill-description">
+                        Image creation and management; initial orchestration studies.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">📚</div>
+                    <div class="skill-category">Version Control</div>
+                    <h3 class="skill-title">Git / GitHub</h3>
+                    <p class="skill-description">
+                        Daily usage; branching, PRs, and standard workflows.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">🔐</div>
+                    <div class="skill-category">Networking & Security</div>
+                    <h3 class="skill-title">Applied Fundamentals</h3>
+                    <p class="skill-description">
+                        VPN configuration, firewalls, and IAM best practices.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -229,39 +229,58 @@
         <div class="container">
             <h2 class="section-title">Education & Continuous Learning</h2>
 
-            <div class="studies-grid">
-                <div class="study-card">
-                    <h3 class="study-card-title">Ongoing Roadmap</h3>
-                    <div class="study-entry">
-                        <span class="study-tag">CURRENT</span>
-                        <p><strong>CI/CD:</strong> GitHub Actions for serverless deployments.</p>
-                        <p><strong>Cloud:</strong> AWS (IAM, S3, CloudFront, VPC) and Security.</p>
-                        <p><strong>IaC:</strong> Terraform (modules and state management).</p>
-                        <p><strong>Orchestration:</strong> Continuous practice in Airflow, Docker, and Kubernetes.</p>
+            <div class="education-container">
+                <div class="education-block">
+                    <h3 class="education-title">Ongoing Roadmap</h3>
+                    
+                    <div class="roadmap-entry">
+                        <span class="roadmap-tag">CURRENT</span>
+                        <div class="roadmap-content">
+                            <p><strong>CI/CD:</strong> GitHub Actions for serverless deployments.</p>
+                            <p><strong>Cloud:</strong> AWS (IAM, S3, CloudFront, VPC) and Security.</p>
+                            <p><strong>IaC:</strong> Terraform (modules and state management).</p>
+                            <p><strong>Orchestration:</strong> Continuous practice in Airflow, Docker, and Kubernetes.</p>
+                        </div>
                     </div>
-                    <div class="study-entry">
-                        <span class="study-tag next">FUTURE</span>
-                        <p>Monitoring (Prometheus/Grafana) and FinOps.</p>
+
+                    <div class="roadmap-entry">
+                        <span class="roadmap-tag future">FUTURE</span>
+                        <div class="roadmap-content">
+                            <p>Monitoring (Prometheus/Grafana) and FinOps.</p>
+                        </div>
                     </div>
-                    <div class="study-meta">
+
+                    <div class="roadmap-goal">
                         <strong>Goal:</strong> Consolidate operational excellence in Linux and Cloud.
                     </div>
                 </div>
 
-                <div class="study-card">
-                    <h3 class="study-card-title">Certifications</h3>
-                    <div class="cert-list">
-                        <div class="cert-item">
-                            <span class="cert-status preparing"></span>
-                            <p>AWS Cloud Practitioner (Preparing)</p>
+                <div class="education-block">
+                    <h3 class="education-title">Certifications</h3>
+                    
+                    <div class="cert-grid">
+                        <div class="cert-badge">
+                            <span class="cert-status-dot preparing"></span>
+                            <div class="cert-text">
+                                <strong>AWS Cloud Practitioner</strong>
+                                <span>Preparing</span>
+                            </div>
                         </div>
-                        <div class="cert-item">
-                            <span class="cert-status target"></span>
-                            <p>AWS Solutions Architect (Target)</p>
+
+                        <div class="cert-badge">
+                            <span class="cert-status-dot target"></span>
+                            <div class="cert-text">
+                                <strong>AWS Solutions Architect</strong>
+                                <span>Target</span>
+                            </div>
                         </div>
-                        <div class="cert-item">
-                            <span class="cert-status in-progress"></span>
-                            <p>Terraform Associate (In Progress)</p>
+
+                        <div class="cert-badge">
+                            <span class="cert-status-dot in-progress"></span>
+                            <div class="cert-text">
+                                <strong>Terraform Associate</strong>
+                                <span>In Progress</span>
+                            </div>
                         </div>
                     </div>
                 </div>
