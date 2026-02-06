@@ -529,6 +529,7 @@ img {
     }
 }
 
+/* --- TRECHO CORRIGIDO --- */
 @media (max-width: 768px) {
     /* Navbar Mobile: Empilha logo e menu para evitar cortes */
     .nav-container {
@@ -548,8 +549,23 @@ img {
         width: fit-content;
     }
 
-    .hero-container { grid-template-columns: 1fr; text-align: center; }
-    .hero-image { display: none; }
+    .hero-container { 
+        grid-template-columns: 1fr; 
+        text-align: center; 
+    }
+
+    /* Alterado de 'display: none' para exibir a imagem no mobile */
+    .hero-image { 
+        display: block;
+        margin-top: 2rem;
+        order: -1; /* Opcional: coloca a imagem ACIMA do texto no mobile */
+    }
+    
+    .hero-image img {
+        max-width: 280px; /* Ajuste este valor se quiser a imagem maior ou menor no celular */
+        margin: 0 auto;
+    }
+
     .hero-buttons { justify-content: center; }
     
     .studies-grid { grid-template-columns: 1fr; }
@@ -567,6 +583,8 @@ img {
         grid-template-columns: 1fr !important;
     }
 }
+/* --- FIM DO TRECHO CORRIGIDO --- */
+
 
 @media (max-width: 480px) {
     .hero-title { font-size: 2rem; }
