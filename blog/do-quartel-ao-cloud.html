@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do Quartel ao Cloud | Reinaldo Del Dotore</title>
+    <!-- O caminho ../ sobe um nível para encontrar o CSS na raiz -->
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        /* Ajustes finos para legibilidade do artigo */
+        .article-body {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        .article-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+        .article-content h2, .article-content h3 {
+            color: var(--text-primary);
+            margin: 2.5rem 0 1.25rem;
+        }
+        .article-header {
+            border-bottom: 1px solid var(--dark-border);
+            padding-bottom: 2rem;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+        .back-link:hover {
+            transform: translateX(-5px);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">REINALDO DEL DOTORE</a>
+            <div class="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../index.html#blog" class="nav-link">Blog</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="article-body">
+        <a href="../index-pt.html#blog" class="back-link">← Voltar para o Blog</a>
+
+        <header class="article-header">
+            <div class="roadmap-tag">Cultura & Metodologia</div>
+            <h1 class="hero-title" style="font-size: 2.8rem; margin-top: 1rem;">Do Quartel ao Cloud: Como a Disciplina Militar Otimiza a Infraestrutura Moderna</h1>
+            <p class="hero-subtitle">Reflexões sobre três décadas de serviço e a transição para o ecossistema DevOps.</p>
+        </header>
+
+        <div class="article-content">
+            <p>
+                A tecnologia e a carreira militar podem parecer mundos distantes à primeira vista. De um lado, linhas de código, servidores virtuais e automação; do outro, hierarquia, procedimentos rigorosos e operações de campo. No entanto, após três décadas de serviço militar, ao migrar para o ecossistema <strong>DevOps e Cloud</strong>, percebi que as fundações de ambos são idênticas: <strong>método, previsibilidade e resiliência.</strong>
+            </p>
+
+            <p>
+                Neste artigo, compartilho como os princípios que guiaram minha carreira na Polícia Militar se tornaram meus maiores aliados na gestão de infraestruturas críticas.
+            </p>
+
+            <h3>1. O Procedimento Operacional Padrão (POP) e a Infraestrutura como Código</h3>
+            <p>
+                No ambiente militar, a improvisação é o caminho mais curto para o fracasso. Tudo é guiado por Procedimentos Operacionais Padrão (POPs) e Procedimentos Administrativos Padrão (PAPs) para garantir que a missão seja cumprida, independentemente de quem esteja no comando.
+            </p>
+            <p>
+                No mundo DevOps, encontrei o equivalente perfeito na <strong>Infraestrutura como Código (IaC)</strong>. Quando utilizamos ferramentas como <strong>Terraform</strong>, estamos, na verdade, escrevendo o "Manual de Operações" da nossa infraestrutura. A disciplina de não realizar alterações manuais ("ClickOps") e garantir que cada recurso seja versionado e documentado é o que separa um ambiente instável de uma operação de excelência.
+            </p>
+
+            <h3>2. Gestão de Crises e a Cultura de Alta Disponibilidade</h3>
+            <p>
+                Uma das lições mais valiosas que trouxe da Polícia Militar é a capacidade de manter a calma sob pressão e agir com base em planos de contingência. Na Cloud, isso se traduz em desenhar arquiteturas pensando na falha.
+            </p>
+            <p>
+                A mentalidade é a mesma: <em>o que faremos se o plano A falhar?</em> A resiliência de um sistema não é fruto do acaso, mas de um planejamento meticuloso que antecipa o pior cenário para garantir que o serviço nunca pare.
+            </p>
+
+            <h3>3. Segurança: O Perímetro Virtual</h3>
+            <p>
+                No quartel, a segurança física e o controle de acesso são fundamentais. Na Cloud, o perímetro é lógico. A minha transição para o gerenciamento de <strong>IAM (Identity and Access Management)</strong> e segurança de redes foi natural, pois entendo que a segurança não é uma funcionalidade adicional, mas o alicerce de qualquer projeto. Aplicar o princípio do "menor privilégio" é, para mim, uma questão de doutrina.
+            </p>
+
+            <h3>4. A Busca pela Melhoria Contínua</h3>
+            <p>
+                O serviço militar me ensinou que o estudo deve ser diário. A tecnologia evolui em uma velocidade frenética: do servidor físico ao Serverless, do Docker ao Kubernetes. Manter uma rotina de laboratórios, certificações e leitura técnica não é apenas uma necessidade de mercado, é um hábito de disciplina que carrego comigo.
+            </p>
+
+            <div class="education-block" style="margin-top: 4rem;">
+                <h3 style="margin-top: 0;">Conclusão</h3>
+                <p>
+                    A transição de carreira me mostrou que as ferramentas mudam, mas os valores permanecem. Hoje, ao olhar para um pipeline de CI/CD ou para um cluster complexo, vejo mais do que apenas tecnologia; vejo uma operação que exige ordem, vigilância e uma execução impecável.
+                </p>
+                <p><strong>A missão agora é na Cloud, mas o compromisso com a excelência continua o mesmo.</strong></p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Reinaldo Del Dotore.</p>
+        </div>
+    </footer>
+</body>
+</html>
