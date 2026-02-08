@@ -2,7 +2,7 @@
 
 [![Deploy Website](https://github.com/deldotore-r/deldotore_site/actions/workflows/deploy.yml/badge.svg)](https://github.com/deldotore-r/deldotore_site/actions)
 
-Este repositório hospeda meu site pessoal e serve como um laboratório prático de **Engenharia de Plataforma** e **Automação de Infraestrutura**.
+Este repositório hospeda meu site pessoal, e serve como um laboratório prático de **Engenharia de Plataforma** e **Automação de Infraestrutura**.
 
 ## 🏗️ Arquitetura da Solução
 A solução foi desenhada para ser 100% serverless, focando em alta disponibilidade e baixo custo:
