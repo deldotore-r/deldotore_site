@@ -1,32 +1,32 @@
-# 📂 Cloud & DevOps Lab - deldotore.com
+# Cloud & DevOps Lab – deldotore.com
 
 [![Deploy Website](https://github.com/deldotore-r/deldotore_site/actions/workflows/deploy.yml/badge.svg)](https://github.com/deldotore-r/deldotore_site/actions)
 
-Este repositório hospeda meu site pessoal, e serve como um laboratório prático de **Engenharia de Plataforma** e **Automação de Infraestrutura**.
+This repository hosts my personal website and serves as a hands-on lab for **Platform Engineering** and **Infrastructure Automation**.
 
-## 🏗️ Arquitetura da Solução
-A solução foi desenhada para ser 100% serverless, focando em alta disponibilidade e baixo custo:
-* **Hosting:** Amazon S3 (Static Website Hosting).
-* **Distribuição Global:** Amazon CloudFront (CDN) com terminação SSL/TLS.
-* **Segurança:** IAM Policies restritas e Headers de segurança via Edge Computing.
+## Solution Architecture
+The solution was designed to be 100% serverless, focusing on high availability and low cost:
+- **Hosting:** Amazon S3 (Static Website Hosting).
+- **Global Distribution:** Amazon CloudFront (CDN) with SSL/TLS termination.
+- **Security:** Restricted IAM policies and security headers via edge computing.
 
-## ⚙️ Esteira de CI/CD (GitHub Actions)
-O pipeline automatizado garante que a infraestrutura reflita o estado do código em tempo real:
-1.  **Sincronização:** `aws s3 sync` para atualização inteligente dos ativos.
-2.  **Invalidação:** Purge automático do cache do CloudFront via AWS CLI.
-3.  **Segurança:** Autenticação via GitHub Secrets para proteção de chaves IAM.
+## CI/CD Pipeline (GitHub Actions)
+The automated pipeline ensures that the infrastructure reflects the code state in real time:
+1. **Synchronization:** `aws s3 sync` for intelligent asset updates.
+2. **Invalidation:** Automatic CloudFront cache purge via AWS CLI.
+3. **Security:** Authentication via GitHub Secrets to protect IAM credentials.
 
-## 🔬 Laboratórios e Estudos Ativos (2026)
-Além da infraestrutura deste site, utilizo este ecossistema para homologar práticas de:
-* **Orquestração:** Criação de DAGs complexas com **Apache Airflow**.
-* **Containers:** Virtualização e padronização de ambientes com **Docker**.
-* **Escalabilidade:** Gerenciamento de workloads em **Kubernetes (K8s)**.
-* **IaC:** Evolução de módulos de **Terraform** para provisionamento multi-region.
+## Active Labs & Studies (2026)
+In addition to this site’s infrastructure, this ecosystem is used to validate and experiment with:
+- **Orchestration:** Design of complex DAGs using **Apache Airflow**.
+- **Containers:** Environment virtualization and standardization with **Docker**.
+- **Scalability:** Workload management with **Kubernetes (K8s)**.
+- **IaC:** Evolution of **Terraform** modules for multi-region provisioning.
 
-## 📈 Melhorias Futuras
-- [ ] Implementar OIDC para autenticação GitHub <-> AWS (sem chaves estáticas).
-- [ ] Adicionar testes de infraestrutura (Terratest).
-- [ ] Implementar monitoramento de custos (FinOps) via AWS Budgets.
+## Future Improvements
+- [ ] Implement OIDC for GitHub ↔ AWS authentication (no static keys).
+- [ ] Add infrastructure testing (Terratest).
+- [ ] Implement cost monitoring (FinOps) using AWS Budgets.
 
 ---
-📫 **Contato:** [LinkedIn](https://www.linkedin.com/in/reinaldo-del-dotore/)
+**Contact:** [LinkedIn](https://www.linkedin.com/in/reinaldo-del-dotore/)
