@@ -163,9 +163,53 @@
             <br>
 
             <div class="projects-grid">
+
+                <div class="project-card">
+                    <div class="project-icon">📊</div>
+                    <h3>Stack de Observabilidade de Infraestrutura</h3><br>
+                    <p>
+                        Monitorização profissional para Apache Airflow. Utiliza Prometheus para recolha 
+                        de métricas via StatsD e Grafana para visualização em tempo real de heartbeat, 
+                        vazão e latência de tarefas.
+                    </p>
+                    <div class="project-details">
+                        <p><strong>Stack:</strong> Prometheus, Grafana, StatsD, PromQL, Docker</p>
+                        <p><strong>Destaque:</strong> PromQL avançado com funções rate() para análise de performance instantânea</p>
+                        <p>
+                            <a href="https://github.com/deldotore-r/airflow-monitoring-stack" target="_blank" rel="noopener noreferrer">
+                                Ver repositório no GitHub →
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                
+                <div class="project-card">
+                    <div class="project-icon">📈</div>
+                    <h3>Pipeline Automatizada de Câmbio</h3><br>
+                    <p>
+                        Pipeline de dados end-to-end com Apache Airflow. Monitoriza a cotação EUR/BRL, 
+                        processa métricas com Pandas e publica automaticamente um dashboard responsivo 
+                        através de GitLab CI/CD e Pages.
+                    </p>
+                    <div class="project-details">
+                        <p><strong>Stack:</strong> Airflow, Docker, Python (Pandas), GitLab CI/CD</p>
+                        <p><strong>Destaque:</strong> Arquitectura ETL desacoplada e deploy automatizado via SSH</p>
+                        <p>
+                            <a href="https://deldotore-r.gitlab.io/airflow-cambio-pipeline/" target="_blank" rel="noopener noreferrer">
+                                Ver Dashboard em Directo →
+                            </a>
+                            <br>
+                            <a href="https://gitlab.com/deldotore-r/airflow-cambio-pipeline" target="_blank" rel="noopener noreferrer" style="font-size: 0.85rem; opacity: 0.8;">
+                                Ver Código Fonte (GitLab) →
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                
                 <div class="project-card">
                     <div class="project-icon">☁️</div>
-                    <h3>Site Pessoal Estático na AWS</h3>
+                    <h3>Site Pessoal Estático na AWS</h3><br>
                     <p>
                         Portfólio alojado em S3 com distribuição via CloudFront e HTTPS.
                         Configuração focada no desempenho e custo mínimo.
@@ -184,7 +228,7 @@
 
                 <div class="project-card">
                     <div class="project-icon">💻</div>
-                    <h3>Infraestrutura como Código com Terraform</h3>
+                    <h3>Infraestrutura como Código com Terraform</h3><br>
                     <p>
                         Projecto demonstrativo de IaC na AWS.
                         Aprovisionamento reprodutível de EC2, Security Groups e S3,
@@ -203,7 +247,7 @@
 
                 <div class="project-card">
                     <div class="project-icon">⚙️</div>
-                    <h3>Pipeline CI/CD: Automação Total</h3>
+                    <h3>Pipeline CI/CD: Automação Total</h3><br>
                     <p>
                         Implementação de uma esteira de entrega contínua com GitHub Actions.
                         Automatiza o deploy seguro, sincroniza activos no S3 e gere a
