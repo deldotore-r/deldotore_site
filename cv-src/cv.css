@@ -1,0 +1,160 @@
+/* Print stylesheet for the CV. Rendered to PDF with cv-src/build.py. */
+
+@font-face {
+    font-family: "Public Sans";
+    src: url("fonts/public-sans-latin-wght-normal.woff2") format("woff2");
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@page {
+    size: A4;
+    margin: 16mm 17mm 16mm 17mm;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+body {
+    margin: 0;
+    font-family: "Public Sans", sans-serif;
+    font-size: 9.6pt;
+    line-height: 1.45;
+    color: #17222d;
+}
+
+h1, h2, h3, p, ul, dl, dd {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header h1 {
+    font-size: 24pt;
+    font-weight: 760;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+}
+
+header .role {
+    margin-top: 2pt;
+    font-size: 13pt;
+    color: #4c5865;
+}
+
+header .contact {
+    margin-top: 7pt;
+    color: #4c5865;
+    font-size: 9pt;
+}
+
+header .contact span + span::before {
+    content: " | ";
+    color: #a0aab3;
+}
+
+.summary {
+    margin-top: 11pt;
+    font-size: 10.2pt;
+    line-height: 1.5;
+}
+
+section {
+    margin-top: 13pt;
+}
+
+section h2 {
+    font-size: 11pt;
+    font-weight: 720;
+    padding-bottom: 3pt;
+    border-bottom: 1.2pt solid #17222d;
+    margin-bottom: 7pt;
+}
+
+.job + .job {
+    margin-top: 10pt;
+}
+
+.job-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12pt;
+}
+
+.job-head h3 {
+    font-size: 10.4pt;
+    font-weight: 680;
+}
+
+.job-head .dates {
+    color: #4c5865;
+    white-space: nowrap;
+}
+
+.job .context {
+    margin-top: 2pt;
+    color: #4c5865;
+}
+
+.job ul {
+    margin-top: 5pt;
+    padding-left: 12pt;
+}
+
+.job li + li {
+    margin-top: 3pt;
+}
+
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 18pt;
+}
+
+.label-list > div {
+    display: grid;
+    grid-template-columns: 30mm 1fr;
+    gap: 8pt;
+}
+
+.label-list > div {
+    break-inside: avoid;
+}
+
+.label-list > div + div {
+    margin-top: 4pt;
+}
+
+.label-list dt {
+    font-weight: 650;
+}
+
+.projects li {
+    list-style: none;
+}
+
+.projects li + li {
+    margin-top: 4pt;
+}
+
+.projects strong {
+    font-weight: 650;
+}
+
+ul.projects {
+    padding: 0;
+}
+
+.keep {
+    break-inside: avoid;
+}

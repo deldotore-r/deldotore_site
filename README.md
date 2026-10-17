@@ -16,6 +16,20 @@ The automated pipeline ensures that the infrastructure reflects the code state i
 2. **Invalidation:** Automatic CloudFront cache purge via AWS CLI.
 3. **Security:** Authentication via GitHub Secrets to protect IAM credentials.
 
+## Site structure
+- `index.html` (English) and `index-pt.html` (Portuguese): the home pages.
+- `styles.css` and `script.js`: shared by every page.
+- `blog/`: articles hosted on the site.
+- `docs/`: the CV PDFs, built from `cv-src/` (which carries its own copy of the Public Sans font, SIL Open Font License).
+
+## Updating the CV
+Edit `cv-src/cv-en.html` and `cv-src/cv-pt.html`, then rebuild the PDFs:
+
+```bash
+pip install playwright && playwright install chromium
+python3 cv-src/build.py
+```
+
 ## Active Labs & Studies (2026)
 In addition to this site’s infrastructure, this ecosystem is used to validate and experiment with:
 - **Orchestration:** Design of complex DAGs using **Apache Airflow**.

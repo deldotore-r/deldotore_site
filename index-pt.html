@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>deldotore - Infraestrutura, Cloud & DevOps</title>
+    <title>deldotore - Data Platform Engineer</title>
+    <meta name="description" content="Data Platform Engineer que opera uma plataforma de dados em produção sobre Kubernetes: Airflow, Spark, Apache Iceberg e AWS. Na Guarda, Portugal.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://deldotore.com/index-pt.html">
+    <meta property="og:title" content="Reinaldo Del Dotore - Data Platform Engineer">
+    <meta property="og:description" content="A operar uma plataforma de dados em produção sobre Kubernetes: Airflow, Spark, Apache Iceberg e AWS.">
     <link rel="stylesheet" href="styles.css">
-    <link rel="alternate" hreflang="en" href="https://teusite.com/index.html" />
-    <link rel="alternate" hreflang="pt-pt" href="https://teusite.com/index-pt.html" />
+    <link rel="alternate" hreflang="en" href="https://deldotore.com/index.html" />
+    <link rel="alternate" hreflang="pt-pt" href="https://deldotore.com/index-pt.html" />
 </head>
 <body>
 
@@ -17,7 +22,7 @@
                 <li><a href="#inicio" class="nav-link">Início</a></li>
                 <li><a href="#sobre" class="nav-link">Sobre</a></li>
                 <li><a href="#competencias" class="nav-link">Competências</a></li>
-                <li><a href="#projetos" class="nav-link">Projectos</a></li>
+                <li><a href="#projetos" class="nav-link">Projetos</a></li>
                 <li><a href="#blog" class="nav-link">Blog</a></li>
                 <li><a href="#contato" class="nav-link">Contacto</a></li>
                 <li class="lang-selector">
@@ -36,15 +41,16 @@
         <div class="hero-container">
             <div class="hero-content">
                 <h1 class="hero-title">
-                    <span class="gradient-text">Infraestrutura, Cloud & DevOps</span>
+                    <span class="gradient-text">Data Platform Engineer</span>
                 </h1>
                 <p class="hero-subtitle">
-                    Disciplina, método e entrega aplicados à infraestrutura em nuvem.
-                    Rigor técnico, automação e práticas comprovadas.
+                    Ajudo a operar uma plataforma de dados em produção sobre Kubernetes:
+                    Airflow, Spark, Apache Iceberg e AWS. Descubro porque é que as coisas
+                    falham, provo-o com evidências e deixo tudo registado.
                 </p>
                 <div class="hero-buttons">
                     <a href="#contato" class="btn btn-primary">Conectar</a>
-                    <a href="#projetos" class="btn btn-secondary">Ver Projectos</a>
+                    <a href="#projetos" class="btn btn-secondary">Ver Projetos</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -55,15 +61,22 @@
 
     <section id="sobre" class="section section-dark">
         <div class="container">
-            <h2 class="section-title">Quem sou e o que procuro</h2>
+            <h2 class="section-title">Quem sou e como trabalho</h2>
             <div class="about-grid">
                 <div class="about-card">
                     <div class="card-icon">💼</div>
-                    <h3>Formação e Abordagem</h3>
+                    <h3>Percurso e Função Atual</h3>
                     <p>
-                        Oficial reformado com três décadas de serviço.
-                        Trago uma rotina de estudo diário, prática laboratorial
-                        e método aplicado à infraestrutura e ao código.
+                        Data Platform Engineer na COCUS Portugal desde março de 2026, numa equipa
+                        pequena responsável pela infraestrutura de uma plataforma analítica em
+                        produção de uma empresa do setor energético. Escala de prevenção 24/7
+                        desde setembro de 2026.
+                    </p>
+                    <br>
+                    <p>
+                        Antes da TI, 30 anos como oficial da Polícia Militar do Estado de São Paulo:
+                        médico dentista e depois assessoria jurídica, informações, compras e pessoal.
+                        Na reserva como Major. Licenciaturas em Medicina Dentária (USP) e Direito (UNIESP).
                     </p>
                 </div>
 
@@ -71,9 +84,11 @@
                     <div class="card-icon">⚡</div>
                     <h3>Como Trabalho</h3>
                     <p>
-                        Entrega previsível. Documentação e processos claros.
-                        Priorizo a automação, infraestrutura como código (IaC)
-                        e soluções prontas para produção.
+                        Verificar antes de concluir: os meus relatórios separam o que observei
+                        diretamente do que é inferência. Linha de comandos primeiro, para que cada
+                        investigação possa ser repetida passo a passo. Em produção, uma alteração
+                        de cada vez e só depois de reunidas as evidências. Tudo por escrito:
+                        runbooks, protocolos e relatórios de incidente.
                     </p>
                 </div>
 
@@ -81,11 +96,12 @@
                     <div class="card-icon">🛠️</div>
                     <h3>Competências Técnicas</h3>
                     <ul class="tech-list">
-                        <li>Linux (Xubuntu, Ubuntu, Debian) — Administração diária, shell scripting e automação</li>
-                        <li>AWS (S3, IAM, EC2, VPC, CloudFront)</li>
-                        <li>Terraform — Infraestrutura como Código</li>
-                        <li>Docker, Git, Bash</li>
-                        <li>Fundamentos de redes e segurança</li>
+                        <li>Kubernetes no Amazon EKS — operação e troubleshooting diários</li>
+                        <li>Apache Airflow 2.8 e Spark sobre Kubernetes</li>
+                        <li>Apache Iceberg e Hive Metastore</li>
+                        <li>AWS (EKS, EMR, S3, IAM, CloudWatch Logs)</li>
+                        <li>Prometheus e Grafana</li>
+                        <li>Python, Bash e SQL para ferramentas de operação</li>
                     </ul>
                 </div>
             </div>
@@ -95,26 +111,47 @@
     <section id="competencias" class="section">
         <div class="container">
             <h2 class="section-title">
-                Visão prática do stack actual e áreas em desenvolvimento
+                Visão prática do stack atual e áreas em desenvolvimento
             </h2>
 
             <div class="skills-grid">
                 <div class="skill-card">
-                    <div class="skill-icon">🐧</div>
-                    <div class="skill-category">Sistema Operativo</div>
-                    <h3 class="skill-title">Linux</h3>
+                    <div class="skill-icon">☸️</div>
+                    <div class="skill-category">Orquestração de Contentores</div>
+                    <h3 class="skill-title">Kubernetes (EKS)</h3>
                     <p class="skill-description">
-                        Utilização diária, administração completa, shell scripting e automação de tarefas.
-                        Experiência prática em deployment e integração DevOps.
+                        Operação diária em produção: workloads, agendamento, autoscaling,
+                        volumes persistentes e troubleshooting com kubectl. Em preparação para o CKA.
                     </p>
                 </div>
 
                 <div class="skill-card">
-                    <div class="skill-icon">🏗️</div>
-                    <div class="skill-category">Infraestrutura como Código</div>
-                    <h3 class="skill-title">Terraform</h3>
+                    <div class="skill-icon">🔄</div>
+                    <div class="skill-category">Orquestração de Workflows</div>
+                    <h3 class="skill-title">Apache Airflow</h3>
                     <p class="skill-description">
-                        Desenvolvimento de módulos, aprovisionamento reprodutível e pipelines CI/CD.
+                        Airflow 2.8 em produção: triagem de falhas de DAGs, saúde do scheduler
+                        e investigações na base de dados de metadados.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">⚙️</div>
+                    <div class="skill-category">Processamento de Dados</div>
+                    <h3 class="skill-title">Apache Spark</h3>
+                    <p class="skill-description">
+                        Spark sobre Kubernetes e Amazon EMR: falhas de drivers e executors,
+                        dimensionamento e análise de custos.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">🧊</div>
+                    <div class="skill-category">Lakehouse</div>
+                    <h3 class="skill-title">Apache Iceberg</h3>
+                    <p class="skill-description">
+                        Tabelas Iceberg no S3 com Hive Metastore: crescimento de metadados,
+                        retenção de snapshots e problemas de locks.
                     </p>
                 </div>
 
@@ -123,34 +160,18 @@
                     <div class="skill-category">Cloud / Serviços</div>
                     <h3 class="skill-title">AWS</h3>
                     <p class="skill-description">
-                        Ambientes de teste, optimização de custos e práticas de segurança avançadas.
+                        EKS, EMR, S3, IAM e CloudWatch Logs em produção; S3, CloudFront
+                        e Terraform em projetos pessoais.
                     </p>
                 </div>
 
                 <div class="skill-card">
-                    <div class="skill-icon">📦</div>
-                    <div class="skill-category">Contentores</div>
-                    <h3 class="skill-title">Docker</h3>
+                    <div class="skill-icon">📊</div>
+                    <div class="skill-category">Observabilidade</div>
+                    <h3 class="skill-title">Prometheus & Grafana</h3>
                     <p class="skill-description">
-                        Criação e execução de imagens; estudos iniciais de orquestração.
-                    </p>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">📚</div>
-                    <div class="skill-category">Controlo de Versão</div>
-                    <h3 class="skill-title">Git / GitHub</h3>
-                    <p class="skill-description">
-                        Utilização quotidiana; branches, PRs e fluxos de trabalho padrão.
-                    </p>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">🔐</div>
-                    <div class="skill-category">Networking & Segurança</div>
-                    <h3 class="skill-title">Práticas Aplicadas</h3>
-                    <p class="skill-description">
-                        Configuração de VPNs, firewalls e boas práticas de IAM.
+                        Dashboards e alertas da plataforma em produção, e uma stack própria de
+                        monitorização de Airflow em laboratório.
                     </p>
                 </div>
             </div>
@@ -159,22 +180,76 @@
 
     <section id="projetos" class="section section-dark">
         <div class="container">
-            <h2 class="section-title">Projectos & Demonstrações Práticas</h2>
+            <h2 class="section-title">Trabalho em Produção & Projetos</h2>
+            <p class="hero-subtitle" style="text-align: center; font-size: 1rem; margin-top: -2rem;">
+                Os casos de produção foram generalizados e os números arredondados, por confidencialidade com o cliente.
+            </p>
             <br>
 
             <div class="projects-grid">
 
                 <div class="project-card">
+                    <div class="study-tag">Em produção</div>
+                    <div class="project-icon">🧊</div>
+                    <h3>Tarefas de Ingestão a Demorar Horas, Sem Erros</h3><br>
+                    <p>
+                        Uma pipeline continuava a reportar sucesso enquanto tarefas que deviam
+                        demorar minutos passavam das quatro horas. Dois anos de commits minúsculos
+                        sem expiração de snapshots tinham levado os metadados Iceberg da tabela a
+                        mais de 5.000 vezes o tamanho dos dados.
+                    </p>
+                    <div class="project-details">
+                        <p><strong>Ferramentas:</strong> AWS CLI, kubectl, Python (fastavro, psycopg2)</p>
+                        <p><strong>Resultado:</strong> Causa raiz confirmada, relatório de investigação e plano de correção; uma análise posterior encontrou dezenas de tabelas com o mesmo padrão</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="study-tag">Em produção</div>
+                    <div class="project-icon">🌐</div>
+                    <h3>Jobs Spark a Falhar em Nós Novos</h3><br>
+                    <p>
+                        Drivers Spark falhavam segundos depois de o cluster escalar. Os nós novos
+                        ficavam Ready em cerca de 13 segundos, mas a rede dos pods demorava 2 a 3,5
+                        minutos a convergir. Confirmado com medições ao vivo e registos de auditoria
+                        do API server do EKS.
+                    </p>
+                    <div class="project-details">
+                        <p><strong>Stack:</strong> Amazon EKS, Calico, Cluster Autoscaler, CloudWatch Logs</p>
+                        <p><strong>Resultado:</strong> Quatro opções de mitigação documentadas; correção em curso</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="study-tag">Em produção</div>
+                    <div class="project-icon">🧹</div>
+                    <h3>Auditoria Diária da Plataforma</h3><br>
+                    <p>
+                        Um protocolo matinal escrito com 21 verificações, apoiado por uma CLI em
+                        Python sem dependências externas que encontra desperdício e trabalho preso
+                        entre ambientes: pods em crash loop ou terminados por falta de memória,
+                        pods Spark zombie, clusters EMR órfãos, execuções de DAGs presas e locks
+                        órfãos no Hive Metastore.
+                    </p>
+                    <div class="project-details">
+                        <p><strong>Ferramentas:</strong> biblioteca padrão do Python, kubectl, AWS CLI</p>
+                        <p><strong>Destaque:</strong> Encontrou clusters EMR ociosos com 18 instâncias e sem encerramento automático</p>
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <div class="study-tag">Projeto pessoal</div>
                     <div class="project-icon">📊</div>
                     <h3>Stack de Observabilidade de Infraestrutura</h3><br>
                     <p>
-                        Monitorização profissional para Apache Airflow. Utiliza Prometheus para recolha 
-                        de métricas via StatsD e Grafana para visualização em tempo real de heartbeat, 
+                        Monitorização para Apache Airflow. Utiliza Prometheus para recolha
+                        de métricas via StatsD e Grafana para visualização em tempo real de heartbeat,
                         vazão e latência de tarefas.
                     </p>
                     <div class="project-details">
                         <p><strong>Stack:</strong> Prometheus, Grafana, StatsD, PromQL, Docker</p>
-                        <p><strong>Destaque:</strong> PromQL avançado com funções rate() para análise de performance instantânea</p>
+                        <p><strong>Destaque:</strong> PromQL com funções rate() para análise de performance instantânea</p>
                         <p>
                             <a href="https://github.com/deldotore-r/airflow-monitoring-stack" target="_blank" rel="noopener noreferrer">
                                 Ver repositório no GitHub →
@@ -183,82 +258,25 @@
                     </div>
                 </div>
 
-                
                 <div class="project-card">
+                    <div class="study-tag">Projeto pessoal</div>
                     <div class="project-icon">📈</div>
                     <h3>Pipeline Automatizada de Câmbio</h3><br>
                     <p>
-                        Pipeline de dados end-to-end com Apache Airflow. Monitoriza a cotação EUR/BRL, 
-                        processa métricas com Pandas e publica automaticamente um dashboard responsivo 
+                        Pipeline de dados end-to-end com Apache Airflow. Monitoriza a cotação EUR/BRL,
+                        processa métricas com Pandas e publica automaticamente um dashboard responsivo
                         através de GitLab CI/CD e Pages.
                     </p>
                     <div class="project-details">
                         <p><strong>Stack:</strong> Airflow, Docker, Python (Pandas), GitLab CI/CD</p>
-                        <p><strong>Destaque:</strong> Arquitectura ETL desacoplada e deploy automatizado via SSH</p>
+                        <p><strong>Destaque:</strong> Arquitetura ETL desacoplada e deploy automatizado via SSH</p>
                         <p>
                             <a href="https://deldotore-r.gitlab.io/airflow-cambio-pipeline/" target="_blank" rel="noopener noreferrer">
-                                Ver Dashboard em Directo →
+                                Ver Dashboard em Direto →
                             </a>
                             <br>
                             <a href="https://gitlab.com/deldotore-r/airflow-cambio-pipeline" target="_blank" rel="noopener noreferrer" style="font-size: 0.85rem; opacity: 0.8;">
                                 Ver Código Fonte (GitLab) →
-                            </a>
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-icon">☁️</div>
-                    <h3>Site Pessoal Estático na AWS</h3><br>
-                    <p>
-                        Portfólio alojado em S3 com distribuição via CloudFront e HTTPS.
-                        Configuração focada no desempenho e custo mínimo.
-                        Documentação e automação do deploy.
-                    </p>
-                    <div class="project-details">
-                        <p><strong>Arquitectura:</strong> S3 + CloudFront + HTTPS</p>
-                        <p><strong>Foco:</strong> Performance e eficiência de custos</p>
-                        <p>
-                            <a href="https://www.linkedin.com/pulse/como-hospedar-um-site-est%C3%A1tico-na-aws-por-menos-de-2m%C3%AAs-del-dotore-4jxve/" target="_blank" rel="noopener noreferrer">
-                                Ler artigo completo →
-                            </a>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">💻</div>
-                    <h3>Infraestrutura como Código com Terraform</h3><br>
-                    <p>
-                        Projecto demonstrativo de IaC na AWS.
-                        Aprovisionamento reprodutível de EC2, Security Groups e S3,
-                        com foco em boas práticas e limpeza total do ambiente.
-                    </p>
-                    <div class="project-details">
-                        <p><strong>Ferramentas:</strong> Terraform, AWS CLI</p>
-                        <p><strong>Resultado:</strong> Ambiente versionado, efêmero e replicável</p>
-                        <p>
-                            <a href="https://github.com/deldotore-r/aws-basic-infra-terraform" target="_blank" rel="noopener noreferrer">
-                                Ver repositório no GitHub →
-                            </a>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">⚙️</div>
-                    <h3>Pipeline CI/CD: Automação Total</h3><br>
-                    <p>
-                        Implementação de uma esteira de entrega contínua com GitHub Actions.
-                        Automatiza o deploy seguro, sincroniza activos no S3 e gere a
-                        invalidação de cache no CloudFront a cada push.
-                    </p>
-                    <div class="project-details">
-                        <p><strong>Tecnologias:</strong> GitHub Actions, AWS CLI, YAML</p>
-                        <p><strong>Destaque:</strong> Invalidação programática de cache em 15s</p>
-                        <p>
-                            <a href="https://www.linkedin.com/pulse/al%C3%A9m-do-c%C3%B3digo-anatomia-de-uma-pipeline-cicd-com-aws-e-del-dotore-3rwwe/" target="_blank" rel="noopener noreferrer">
-                                Ver arquitectura da pipeline →
                             </a>
                         </p>
                     </div>
@@ -274,54 +292,46 @@
             <div class="education-container">
                 <div class="education-block">
                     <h3 class="education-title">Aprendizagem Contínua</h3>
-                    
+
                     <div class="roadmap-entry">
-                        <span class="roadmap-tag">ACTUAL</span>
+                        <span class="roadmap-tag">ATUAL</span>
                         <div class="roadmap-content">
-                            <p><strong>CI/CD:</strong> Pipelines GitHub Actions para deployments serverless.</p>
-                            <p><strong>Cloud:</strong> AWS (IAM, S3, CloudFront, VPC) e Segurança.</p>
-                            <p><strong>IaC:</strong> Terraform (módulos e gestão de estado).</p>
-                            <p><strong>Orquestração:</strong> Prática contínua em Airflow, Docker e Kubernetes.</p>
+                            <p><strong>Kubernetes:</strong> preparação para o exame CKA.</p>
+                            <p><strong>Apache Iceberg:</strong> funcionamento interno e modelo de concorrência.</p>
+                            <p><strong>dbt:</strong> fundamentos, rumo a analytics engineering.</p>
+                            <p><strong>Laboratório:</strong> Terraform, GitHub Actions e Linux.</p>
                         </div>
                     </div>
 
                     <div class="roadmap-entry">
                         <span class="roadmap-tag future">FUTURO</span>
                         <div class="roadmap-content">
-                            <p>Monitorização (Prometheus/Grafana) e FinOps.</p>
+                            <p>Tuning de performance de Spark e AWS Certified Data Engineer – Associate.</p>
                         </div>
                     </div>
 
                     <div class="roadmap-goal">
-                        <strong>Objectivo:</strong> Consolidar competência operacional em Linux e Cloud.
+                        <strong>Objetivo:</strong> Aprofundar a engenharia de plataformas para cargas de dados em Kubernetes.
                     </div>
                 </div>
 
                 <div class="education-block">
                     <h3 class="education-title">Certificações</h3>
-                    
+
                     <div class="cert-grid">
                         <div class="cert-badge">
-                            <span class="cert-status-dot preparing"></span>
+                            <span class="cert-status-dot in-progress"></span>
                             <div class="cert-text">
-                                <strong>AWS Cloud Practitioner</strong>
-                                <span>Preparação</span>
+                                <strong>Certified Kubernetes Administrator (CKA)</strong>
+                                <span>Em curso</span>
                             </div>
                         </div>
 
                         <div class="cert-badge">
                             <span class="cert-status-dot target"></span>
                             <div class="cert-text">
-                                <strong>AWS Solutions Architect</strong>
+                                <strong>AWS Certified Data Engineer – Associate</strong>
                                 <span>Alvo</span>
-                            </div>
-                        </div>
-
-                        <div class="cert-badge">
-                            <span class="cert-status-dot in-progress"></span>
-                            <div class="cert-text">
-                                <strong>Terraform Associate</strong>
-                                <span>Em curso</span>
                             </div>
                         </div>
                     </div>
@@ -333,37 +343,30 @@
     <section id="blog" class="section section-dark">
         <div class="container">
             <h2 class="section-title">Blog & Artigos Técnicos</h2>
-            
+
             <br>
 
             <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="study-tag">Artigo</div>
+                    <h3 class="skill-title">Do Quartel ao Cloud</h3>
+                    <p class="skill-description">Como os princípios de disciplina e método da Polícia Militar se aplicam à gestão de Cloud e DevOps.</p>
+                    <a href="blog/do-quartel-ao-cloud.html" class="nav-link" style="color: var(--primary-color); margin-top: 1rem; display: inline-block; font-weight: 600;">Ler artigo completo →</a>
+                </div>
+
                 <article class="blog-card">
+                    <div class="study-tag">Artigo</div>
+                    <h3>Como Alojar um Site Estático na AWS por Menos de 2 Dólares por Mês</h3>
+                    <p>S3, CloudFront e HTTPS, passo a passo: a configuração por trás deste site.</p>
+                    <a href="https://www.linkedin.com/pulse/como-hospedar-um-site-est%C3%A1tico-na-aws-por-menos-de-2m%C3%AAs-del-dotore-4jxve/" class="blog-link">Ler artigo →</a>
+                </article>
+
+                <article class="blog-card">
+                    <div class="study-tag">Artigo</div>
                     <h3>Anatomia de uma Pipeline CI/CD com AWS</h3>
                     <p>Como orquestrar GitHub Actions, S3 e CloudFront para entregas globais resilientes.</p>
                     <a href="https://www.linkedin.com/pulse/al%C3%A9m-do-c%C3%B3digo-anatomia-de-uma-pipeline-cicd-com-aws-e-del-dotore-3rwwe/" class="blog-link">Ler artigo →</a>
                 </article>
-
-                <article class="blog-card">
-                    <div class="study-tag">Artigo</div>
-                    <h3>Minha transição definitiva para Linux</h3>
-                    <p>Motivações e experiências práticas que me levarão a adotar Ubuntu LTS como sistema principal, substituindo o Windows.</p>
-                    <!---<a href="#" class="blog-link">Ler artigo →</a>--->
-                    <a href="https://www.linkedin.com/pulse/minha-transi%C3%A7%C3%A3o-definitiva-para-o-linux-e-por-que-ela-del-dotore-xpntf/?trackingId=Xp3TWCSKR8WUYCVLR3WaWg%3D%3D" class="blog-link">Ler artigo →</a>
-                </article>
-
-                <div class="blog-card">
-                    <div class="study-tag">Artigo</div>
-                    <h3 class="skill-title">Do Quartel ao Cloud</h3>
-                    <p class="skill-description">Como os princípios de disciplina e método das Forças Armadas se aplicam à gestão de Cloud e DevOps.</p>
-                    <a href="blog/do-quartel-ao-cloud.html" class="nav-link" style="color: var(--primary-color); margin-top: 1rem; display: inline-block; font-weight: 600;">Ler artigo completo →</a>
-                </div>
-
-                <!---<article class="blog-card">
-                    <h3>Fundamentos de Networking para DevOps</h3>
-                    <p>Conceitos essenciais de redes para profissionais de DevOps.</p>
-                    <a href="#" class="blog-link">Ler artigo →</a>
-                    <p>(EM BREVE)</p>
-                </article> --->
             </div>
         </div>
     </section>
@@ -391,7 +394,7 @@
                     <p>Os meus repositórios</p>
                 </a>
 
-                <a href="docs/deldotore.pdf" class="contact-card" target="_blank" rel="noopener noreferrer" download>
+                <a href="docs/Reinaldo-Del-Dotore-CV-PT.pdf" class="contact-card" target="_blank" rel="noopener noreferrer" download>
                     <div class="contact-icon">📕</div>
                     <h3>CV</h3>
                     <p>Download PDF</p>
