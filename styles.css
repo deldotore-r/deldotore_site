@@ -26,6 +26,7 @@ html {
     scroll-behavior: smooth;
     width: 100%;
     overflow-x: hidden;
+    overflow-x: clip;
 }
 
 body {
@@ -35,6 +36,7 @@ body {
     line-height: 1.6;
     width: 100%;
     overflow-x: hidden;
+    overflow-x: clip;
 }
 
 img {
@@ -131,6 +133,13 @@ img {
 .flag-emoji {
     font-size: 1.6rem;
     line-height: 1;
+}
+
+.flag-icon {
+    display: block;
+    width: 1.6rem;
+    height: 1.2rem;
+    border-radius: 2px;
 }
 
 /* ===========================
@@ -589,6 +598,11 @@ img {
 
     .flag-emoji {
         font-size: 1.4rem;
+    }
+
+    .flag-icon {
+        width: 1.4rem;
+        height: 1.05rem;
     }
 
     .section-title { font-size: 1.8rem; }
