@@ -18,10 +18,9 @@ The automated pipeline ensures that the infrastructure reflects the code state i
 
 ## Site structure
 - `index.html` (English) and `index-pt.html` (Portuguese): the home pages.
-- `styles.css`: one stylesheet for every page, with light and dark themes.
-- `fonts/`: self-hosted Public Sans (SIL Open Font License), so no third-party requests.
+- `styles.css` and `script.js`: shared by every page.
 - `blog/`: articles hosted on the site.
-- `docs/`: the CV PDFs, built from `cv-src/`.
+- `docs/`: the CV PDFs, built from `cv-src/` (which carries its own copy of the Public Sans font, SIL Open Font License).
 
 ## Updating the CV
 Edit `cv-src/cv-en.html` and `cv-src/cv-pt.html`, then rebuild the PDFs:

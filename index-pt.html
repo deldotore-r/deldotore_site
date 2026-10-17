@@ -1,300 +1,433 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-PT">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reinaldo Del Dotore, Data Platform Engineer</title>
-    <meta name="description" content="Data Platform Engineer que opera uma plataforma de dados em produção sobre Kubernetes: Airflow, Spark, Apache Iceberg e AWS. Mora em Guarda, Portugal.">
-    <link rel="canonical" href="https://deldotore.com/index-pt.html">
-    <link rel="alternate" hreflang="en" href="https://deldotore.com/">
-    <link rel="alternate" hreflang="pt-BR" href="https://deldotore.com/index-pt.html">
-    <link rel="alternate" hreflang="x-default" href="https://deldotore.com/">
+    <title>deldotore - Data Platform Engineer</title>
+    <meta name="description" content="Data Platform Engineer que opera uma plataforma de dados em produção sobre Kubernetes: Airflow, Spark, Apache Iceberg e AWS. Na Guarda, Portugal.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://deldotore.com/index-pt.html">
-    <meta property="og:title" content="Reinaldo Del Dotore, Data Platform Engineer">
-    <meta property="og:description" content="Operando uma plataforma de dados em produção sobre Kubernetes: Airflow, Spark, Apache Iceberg e AWS.">
-    <meta property="og:locale" content="pt_BR">
-    <meta name="theme-color" content="#f2f4f3" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#11171d" media="(prefers-color-scheme: dark)">
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="preload" href="fonts/public-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <meta property="og:title" content="Reinaldo Del Dotore - Data Platform Engineer">
+    <meta property="og:description" content="A operar uma plataforma de dados em produção sobre Kubernetes: Airflow, Spark, Apache Iceberg e AWS.">
     <link rel="stylesheet" href="styles.css">
+    <link rel="alternate" hreflang="en" href="https://deldotore.com/index.html" />
+    <link rel="alternate" hreflang="pt-pt" href="https://deldotore.com/index-pt.html" />
 </head>
 <body>
-    <a class="skip" href="#main">Pular para o conteúdo</a>
 
-    <header class="site-head">
-        <div class="wrap head-row">
-            <a class="brand" href="#top">Reinaldo Del Dotore</a>
-            <nav class="site-nav" aria-label="Seções">
-                <ul>
-                    <li><a href="#trabalho">Trabalho</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#trajetoria">Trajetória</a></li>
-                    <li><a href="#artigos">Artigos</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                    <li><a class="lang" href="index.html" hreflang="en" lang="en">English</a></li>
-                </ul>
-            </nav>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">REINALDO DEL DOTORE</div>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link">Início</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#competencias" class="nav-link">Competências</a></li>
+                <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                <li><a href="#blog" class="nav-link">Blog</a></li>
+                <li><a href="#contato" class="nav-link">Contacto</a></li>
+                <li class="lang-selector">
+                    <a href="index.html" class="lang-link" title="English">
+                        <span class="flag-emoji">🇬🇧</span>
+                    </a>
+                    <a href="index-pt.html" class="lang-link active" title="Português">
+                        <span class="flag-emoji">🇵🇹</span>
+                    </a>
+                </li>
+            </ul>
         </div>
-    </header>
+    </nav>
 
-    <main id="main">
-        <section class="hero wrap" id="top">
-            <h1>Reinaldo Del Dotore</h1>
-            <p class="role">Data Platform Engineer</p>
-            <p class="lead">Ajudo a operar uma plataforma de dados em produção sobre Kubernetes: Airflow, Spark, Apache Iceberg e os serviços AWS ao redor deles. A maior parte do meu trabalho é descobrir por que algo quebrou, provar com evidências e deixar tudo registrado, para que a próxima pessoa não comece do zero.</p>
-            <p class="lead">Antes da TI, servi 30 anos como oficial da Polícia Militar do Estado de São Paulo.</p>
-            <div class="actions">
-                <a class="btn btn-primary" href="docs/Reinaldo-Del-Dotore-CV-PT.pdf">Baixar currículo (PDF)</a>
-                <a class="btn" href="mailto:deldotore@gmail.com">Enviar e-mail</a>
+    <section id="inicio" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Data Platform Engineer</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Ajudo a operar uma plataforma de dados em produção sobre Kubernetes:
+                    Airflow, Spark, Apache Iceberg e AWS. Descubro porque é que as coisas
+                    falham, provo-o com evidências e deixo tudo registado.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contato" class="btn btn-primary">Conectar</a>
+                    <a href="#projetos" class="btn btn-secondary">Ver Projetos</a>
+                </div>
             </div>
-            <p class="meta">Moro em Guarda, Portugal. Na COCUS Portugal desde março de 2026.</p>
-        </section>
-
-        <div class="wrap">
-            <section class="block" id="trabalho" aria-labelledby="trabalho-titulo">
-                <h2 id="trabalho-titulo"><span>Trabalho</span></h2>
-                <div class="block-body">
-                    <div class="position">
-                        <h3>Data Platform Engineer, COCUS Portugal</h3>
-                        <p class="dates">Março de 2026 até hoje, remoto</p>
-                        <p>Faço parte de uma equipe pequena responsável pela infraestrutura de uma plataforma analítica em produção, para uma empresa do setor energético. A plataforma roda no Amazon EKS com Airflow, Spark sobre Kubernetes, Apache Iceberg, Hive Metastore, Dremio, NiFi, RisingWave e Amazon EMR.</p>
-                        <ul>
-                            <li>Verificações diárias de saúde e triagem de incidentes nos ambientes de produção e pré-produção, separando falhas da plataforma de falhas da aplicação antes de qualquer alteração.</li>
-                            <li>Investigações de causa raiz documentadas para as equipes de plataforma e de aplicação.</li>
-                            <li>Ferramentas de linha de comando para auditorias diárias em vários ambientes, escritas em Python sobre kubectl e AWS CLI.</li>
-                            <li>Análise de custo e dimensionamento de clusters EMR e cargas Spark.</li>
-                            <li>Escala de plantão 24/7 desde setembro de 2026.</li>
-                        </ul>
-                    </div>
-
-                    <h3 class="sub">Investigações selecionadas</h3>
-                    <p class="quiet">Os detalhes foram generalizados e os números arredondados, por confidencialidade com o cliente.</p>
-
-                    <ul class="cases">
-                        <li>
-                            <article class="case">
-                                <h3>Tarefas de ingestão levando horas, sem nenhum erro</h3>
-                                <p class="status">Causa raiz confirmada</p>
-                                <dl class="facts">
-                                    <div>
-                                        <dt>Sintoma</dt>
-                                        <dd>Um pipeline continuava reportando sucesso enquanto tarefas que deveriam levar minutos passavam de quatro horas. Sem erros, sem alertas.</dd>
-                                    </div>
-                                    <div>
-                                        <dt>Evidência</dt>
-                                        <dd>Li os metadados Iceberg da tabela diretamente no S3, amostrei o processo de commit via <code>/proc</code> (estava em espera de I/O, não em CPU) e cruzei a contagem de commits com o histórico de execuções no banco de metadados do Airflow.</dd>
-                                    </div>
-                                    <div>
-                                        <dt>Causa</dt>
-                                        <dd>Dois anos de commits minúsculos sem expiração de snapshots. Os metadados da tabela chegaram a mais de 5.000 vezes o tamanho dos dados, e cada commit precisava ler e reescrever tudo isso.</dd>
-                                    </div>
-                                    <div>
-                                        <dt>Resultado</dt>
-                                        <dd>Um relatório de investigação com plano de correção baseado em retenção. Uma varredura posterior encontrou dezenas de outras tabelas com o mesmo padrão.</dd>
-                                    </div>
-                                </dl>
-                                <p class="tools">Ferramentas: AWS CLI, kubectl, Python (fastavro, psycopg2)</p>
-                            </article>
-                        </li>
-                        <li>
-                            <article class="case is-open">
-                                <h3>Jobs Spark falhando segundos depois de chegar a um nó novo</h3>
-                                <p class="status">Causa raiz confirmada, correção em andamento</p>
-                                <dl class="facts">
-                                    <div>
-                                        <dt>Sintoma</dt>
-                                        <dd>Lotes de drivers Spark falhavam com timeout de rede sempre que o cluster escalava. Relançados, funcionavam, então as falhas pareciam aleatórias.</dd>
-                                    </div>
-                                    <div>
-                                        <dt>Evidência</dt>
-                                        <dd>Medi nós recém-criados ao vivo e reconstruí o que cada nó fez a partir dos logs de auditoria do API server do EKS.</dd>
-                                    </div>
-                                    <div>
-                                        <dt>Causa</dt>
-                                        <dd>Os nós novos ficavam Ready em cerca de 13 segundos, mas a rede dos pods levava de 2 a 3,5 minutos para convergir. Drivers agendados nessa janela davam timeout após 16 segundos.</dd>
-                                    </div>
-                                    <div>
-                                        <dt>Resultado</dt>
-                                        <dd>Uma análise escrita de quatro mitigações para a decisão da plataforma: taint de inicialização liberado por um teste real de rede, capacidade de reserva, retentativas automáticas e convergência de rede mais rápida.</dd>
-                                    </div>
-                                </dl>
-                                <p class="tools">Ferramentas: kubectl, AWS CLI, CloudWatch Logs, configuração do Cluster Autoscaler e do Calico</p>
-                            </article>
-                        </li>
-                        <li>
-                            <article class="case">
-                                <h3>Uma verificação matinal de recursos que ninguém está usando</h3>
-                                <p class="status">Roda toda manhã</p>
-                                <dl class="facts">
-                                    <div>
-                                        <dt>Problema</dt>
-                                        <dd>Desperdício e trabalho travado só apareciam quando alguém notava por acaso. Não havia verificação de rotina entre os ambientes.</dd>
-                                    </div>
-                                    <div>
-                                        <dt>Construído</dt>
-                                        <dd>Um protocolo matinal escrito com 21 verificações, apoiado por uma ferramenta de linha de comando em Python que só precisa de kubectl e AWS CLI. Cobre pods em crash loop ou mortos por falta de memória, pods presos em pending ou terminating, pods Spark zumbis, clusters EMR órfãos, execuções de DAG com falha ou travadas e locks órfãos no Hive Metastore.</dd>
-                                    </div>
-                                    <div>
-                                        <dt>Encontrado</dt>
-                                        <dd>Entre outras coisas, três clusters EMR ociosos com 18 instâncias e sem encerramento automático, e execuções de DAG travadas havia quase um mês.</dd>
-                                    </div>
-                                    <div>
-                                        <dt>Resultado</dt>
-                                        <dd>Faz parte da minha rotina diária e foi proposto à equipe como verificação padrão da plataforma.</dd>
-                                    </div>
-                                </dl>
-                                <p class="tools">Ferramentas: biblioteca padrão do Python, kubectl, AWS CLI, banco de metadados do Airflow</p>
-                            </article>
-                        </li>
-                    </ul>
-
-                    <h3 class="sub">Também</h3>
-                    <ul>
-                        <li>Falhas recorrentes de ingestão rastreadas até locks órfãos no banco do Hive Metastore. A detecção agora faz parte da verificação matinal.</li>
-                        <li>Uma indisponibilidade de banco de dados rastreada até um volume persistente cheio e resolvida com a expansão do volume.</li>
-                        <li>Uma revisão de custos de clusters EMR rodando só com capacidade On-Demand, com a migração para instâncias Spot identificada como economia clara.</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="block" id="como-trabalho" aria-labelledby="como-trabalho-titulo">
-                <h2 id="como-trabalho-titulo"><span>Como trabalho</span></h2>
-                <div class="block-body">
-                    <ul class="principles plain">
-                        <li><strong>Verificar antes de concluir.</strong> Meus relatórios separam o que observei diretamente do que é inferência.</li>
-                        <li><strong>Linha de comando primeiro.</strong> As investigações podem ser repetidas passo a passo, por mim ou por qualquer outra pessoa.</li>
-                        <li><strong>Uma mudança de cada vez.</strong> Em produção, nada muda antes de as evidências estarem reunidas, e mesmo assim uma coisa de cada vez.</li>
-                        <li><strong>Deixar por escrito.</strong> Runbooks, protocolos e relatórios de incidente, para que o conhecimento não fique na cabeça de uma só pessoa.</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="block" id="stack" aria-labelledby="stack-titulo">
-                <h2 id="stack-titulo"><span>Tecnologias</span></h2>
-                <div class="block-body">
-                    <div class="stack">
-                        <div>
-                            <h3>No dia a dia, em produção</h3>
-                            <ul>
-                                <li>Kubernetes no Amazon EKS</li>
-                                <li>Apache Airflow 2.8</li>
-                                <li>Apache Spark sobre Kubernetes</li>
-                                <li>Apache Iceberg e Hive Metastore</li>
-                                <li>Dremio, NiFi e RisingWave</li>
-                                <li>AWS: EMR, S3, IAM, CloudWatch Logs</li>
-                                <li>Prometheus e Grafana</li>
-                                <li>Python, Bash e SQL para ferramentas de operação</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3>Laboratórios e projetos pessoais</h3>
-                            <ul>
-                                <li>Terraform</li>
-                                <li>GitHub Actions e GitLab CI</li>
-                                <li>Docker e Docker Compose</li>
-                                <li>AWS serverless: Lambda, API Gateway, DynamoDB, CloudFront, Route 53</li>
-                                <li>Linux (Ubuntu, Fedora)</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <h3 class="sub">Estudos</h3>
-                    <p>Preparando o exame Certified Kubernetes Administrator (CKA) e estudando o funcionamento interno do Apache Iceberg e dbt. Na sequência: tuning de performance de Spark e o exame AWS Certified Data Engineer – Associate.</p>
-                </div>
-            </section>
-
-            <section class="block" id="projetos" aria-labelledby="projetos-titulo">
-                <h2 id="projetos-titulo"><span>Projetos pessoais</span></h2>
-                <div class="block-body">
-                    <ul class="projects plain">
-                        <li>
-                            <h3>Site serverless para um Rotary Club local</h3>
-                            <p>Migrei o site de uma entidade comunitária de uma plataforma hospedada para a AWS, todo em Terraform: S3, CloudFront e ACM para o site; API Gateway, Lambda e DynamoDB para o backend; Route 53 para DNS e SNS para alertas. O estado do Terraform fica no S3 com locking nativo.</p>
-                            <p class="links"><a href="https://github.com/deldotore-r/aws-serverless-rotary">Código no GitHub</a></p>
-                        </li>
-                        <li>
-                            <h3>Stack de monitoramento para Airflow</h3>
-                            <p>O Airflow envia métricas StatsD para um exporter coletado pelo Prometheus; o Grafana mostra o heartbeat do scheduler, a vazão e a latência das tarefas. Roda localmente com Docker Compose.</p>
-                            <p class="links"><a href="https://github.com/deldotore-r/airflow-monitoring-stack">Código no GitHub</a></p>
-                        </li>
-                        <li>
-                            <h3>Pipeline de câmbio</h3>
-                            <p>Duas DAGs Airflow desacopladas: uma coleta a cotação EUR/BRL a cada cinco minutos no horário comercial de Portugal e do Brasil; a outra gera um relatório diário em Plotly que o GitLab CI publica no GitLab Pages.</p>
-                            <p class="links"><a href="https://deldotore-r.gitlab.io/airflow-cambio-pipeline/">Dashboard ao vivo</a> <a href="https://gitlab.com/deldotore-r/airflow-cambio-pipeline">Código no GitLab</a></p>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="block" id="trajetoria" aria-labelledby="trajetoria-titulo">
-                <h2 id="trajetoria-titulo"><span>Trajetória</span></h2>
-                <div class="block-body">
-                    <ol class="timeline plain">
-                        <li>
-                            <p class="when">2026 até hoje</p>
-                            <h3>Data Platform Engineer, COCUS Portugal</h3>
-                        </li>
-                        <li>
-                            <p class="when">2020</p>
-                            <h3>Passagem para a reserva e requalificação em TI</h3>
-                            <p>Estudo autodidata, laboratórios caseiros e projetos pessoais em Linux, AWS, Terraform, Docker e Airflow.</p>
-                        </li>
-                        <li>
-                            <p class="when">1990 a 2020</p>
-                            <h3>Oficial, Polícia Militar do Estado de São Paulo (PMESP)</h3>
-                            <p>Comecei como cirurgião-dentista no serviço odontológico da corporação e depois passei a funções administrativas em assessoria jurídica, inteligência, compras e pessoal. Coordenei equipes de mais de 100 pessoas. Fui para a reserva como Major.</p>
-                        </li>
-                    </ol>
-                    <h3 class="sub">Formação</h3>
-                    <ul class="plain">
-                        <li>Odontologia, Universidade de São Paulo (USP)</li>
-                        <li>Direito, UNIESP</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="block" id="artigos" aria-labelledby="artigos-titulo">
-                <h2 id="artigos-titulo"><span>Artigos</span></h2>
-                <div class="block-body">
-                    <ul class="writing plain">
-                        <li>
-                            <a href="blog/do-quartel-ao-cloud.html">Do quartel ao cloud</a>
-                            <p>O que três décadas de trabalho policial me ensinaram sobre operar infraestrutura. Neste site.</p>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/pulse/como-hospedar-um-site-est%C3%A1tico-na-aws-por-menos-de-2m%C3%AAs-del-dotore-4jxve/">Como hospedar um site estático na AWS por menos de US$ 2 por mês</a>
-                            <p>S3, CloudFront e HTTPS, passo a passo. No LinkedIn.</p>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/pulse/al%C3%A9m-do-c%C3%B3digo-anatomia-de-uma-pipeline-cicd-com-aws-e-del-dotore-3rwwe/">Anatomia de uma pipeline de CI/CD com AWS</a>
-                            <p>GitHub Actions, sincronização com o S3 e invalidação do CloudFront por trás deste site. No LinkedIn.</p>
-                        </li>
-                    </ul>
-                    <p>Mais artigos no <a href="https://www.linkedin.com/in/reinaldo-del-dotore/">meu perfil do LinkedIn</a>.</p>
-                </div>
-            </section>
-
-            <section class="block" id="contato" aria-labelledby="contato-titulo">
-                <h2 id="contato-titulo"><span>Contato</span></h2>
-                <div class="block-body">
-                    <p>O e-mail é a forma mais rápida de falar comigo.</p>
-                    <dl class="contact">
-                        <div><dt>E-mail</dt><dd><a href="mailto:deldotore@gmail.com">deldotore@gmail.com</a></dd></div>
-                        <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/reinaldo-del-dotore/">reinaldo-del-dotore</a></dd></div>
-                        <div><dt>GitHub</dt><dd><a href="https://github.com/deldotore-r">deldotore-r</a></dd></div>
-                        <div><dt>Currículo</dt><dd><a href="docs/Reinaldo-Del-Dotore-CV-PT.pdf">Baixar PDF</a> (<a href="docs/Reinaldo-Del-Dotore-CV-EN.pdf" hreflang="en">em inglês</a>)</dd></div>
-                    </dl>
-                </div>
-            </section>
+            <div class="hero-image">
+                <img src="images/imagem_sitedeldotore.png" alt="Cloud Infrastructure">
+            </div>
         </div>
-    </main>
+    </section>
 
-    <footer class="site-foot">
-        <div class="wrap">
-            <p>&copy; 2026 Reinaldo Del Dotore</p>
-            <p>HTML estático, publicado pelo GitHub Actions no Amazon S3 e no CloudFront. <a href="https://github.com/deldotore-r/deldotore_site">Código no GitHub</a>.</p>
+    <section id="sobre" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Quem sou e como trabalho</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">💼</div>
+                    <h3>Percurso e Função Atual</h3>
+                    <p>
+                        Data Platform Engineer na COCUS Portugal desde março de 2026, numa equipa
+                        pequena responsável pela infraestrutura de uma plataforma analítica em
+                        produção de uma empresa do setor energético. Escala de prevenção 24/7
+                        desde setembro de 2026.
+                    </p>
+                    <br>
+                    <p>
+                        Antes da TI, 30 anos como oficial da Polícia Militar do Estado de São Paulo:
+                        médico dentista e depois assessoria jurídica, informações, compras e pessoal.
+                        Na reserva como Major. Licenciaturas em Medicina Dentária (USP) e Direito (UNIESP).
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Como Trabalho</h3>
+                    <p>
+                        Verificar antes de concluir: os meus relatórios separam o que observei
+                        diretamente do que é inferência. Linha de comandos primeiro, para que cada
+                        investigação possa ser repetida passo a passo. Em produção, uma alteração
+                        de cada vez e só depois de reunidas as evidências. Tudo por escrito:
+                        runbooks, protocolos e relatórios de incidente.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">🛠️</div>
+                    <h3>Competências Técnicas</h3>
+                    <ul class="tech-list">
+                        <li>Kubernetes no Amazon EKS — operação e troubleshooting diários</li>
+                        <li>Apache Airflow 2.8 e Spark sobre Kubernetes</li>
+                        <li>Apache Iceberg e Hive Metastore</li>
+                        <li>AWS (EKS, EMR, S3, IAM, CloudWatch Logs)</li>
+                        <li>Prometheus e Grafana</li>
+                        <li>Python, Bash e SQL para ferramentas de operação</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="competencias" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                Visão prática do stack atual e áreas em desenvolvimento
+            </h2>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">☸️</div>
+                    <div class="skill-category">Orquestração de Contentores</div>
+                    <h3 class="skill-title">Kubernetes (EKS)</h3>
+                    <p class="skill-description">
+                        Operação diária em produção: workloads, agendamento, autoscaling,
+                        volumes persistentes e troubleshooting com kubectl. Em preparação para o CKA.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">🔄</div>
+                    <div class="skill-category">Orquestração de Workflows</div>
+                    <h3 class="skill-title">Apache Airflow</h3>
+                    <p class="skill-description">
+                        Airflow 2.8 em produção: triagem de falhas de DAGs, saúde do scheduler
+                        e investigações na base de dados de metadados.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">⚙️</div>
+                    <div class="skill-category">Processamento de Dados</div>
+                    <h3 class="skill-title">Apache Spark</h3>
+                    <p class="skill-description">
+                        Spark sobre Kubernetes e Amazon EMR: falhas de drivers e executors,
+                        dimensionamento e análise de custos.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">🧊</div>
+                    <div class="skill-category">Lakehouse</div>
+                    <h3 class="skill-title">Apache Iceberg</h3>
+                    <p class="skill-description">
+                        Tabelas Iceberg no S3 com Hive Metastore: crescimento de metadados,
+                        retenção de snapshots e problemas de locks.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">☁️</div>
+                    <div class="skill-category">Cloud / Serviços</div>
+                    <h3 class="skill-title">AWS</h3>
+                    <p class="skill-description">
+                        EKS, EMR, S3, IAM e CloudWatch Logs em produção; Lambda, API Gateway,
+                        DynamoDB, CloudFront e Terraform em projetos pessoais.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">📊</div>
+                    <div class="skill-category">Observabilidade</div>
+                    <h3 class="skill-title">Prometheus & Grafana</h3>
+                    <p class="skill-description">
+                        Dashboards e alertas da plataforma em produção, e uma stack própria de
+                        monitorização de Airflow em laboratório.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Trabalho em Produção & Projetos</h2>
+            <p class="hero-subtitle" style="text-align: center; font-size: 1rem; margin-top: -2rem;">
+                Os casos de produção foram generalizados e os números arredondados, por confidencialidade com o cliente.
+            </p>
+            <br>
+
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <div class="study-tag">Em produção</div>
+                    <div class="project-icon">🧊</div>
+                    <h3>Tarefas de Ingestão a Demorar Horas, Sem Erros</h3><br>
+                    <p>
+                        Uma pipeline continuava a reportar sucesso enquanto tarefas que deviam
+                        demorar minutos passavam das quatro horas. Dois anos de commits minúsculos
+                        sem expiração de snapshots tinham levado os metadados Iceberg da tabela a
+                        mais de 5.000 vezes o tamanho dos dados.
+                    </p>
+                    <div class="project-details">
+                        <p><strong>Ferramentas:</strong> AWS CLI, kubectl, Python (fastavro, psycopg2)</p>
+                        <p><strong>Resultado:</strong> Causa raiz confirmada, relatório de investigação e plano de correção; uma análise posterior encontrou dezenas de tabelas com o mesmo padrão</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="study-tag">Em produção</div>
+                    <div class="project-icon">🌐</div>
+                    <h3>Jobs Spark a Falhar em Nós Novos</h3><br>
+                    <p>
+                        Drivers Spark falhavam segundos depois de o cluster escalar. Os nós novos
+                        ficavam Ready em cerca de 13 segundos, mas a rede dos pods demorava 2 a 3,5
+                        minutos a convergir. Confirmado com medições ao vivo e registos de auditoria
+                        do API server do EKS.
+                    </p>
+                    <div class="project-details">
+                        <p><strong>Stack:</strong> Amazon EKS, Calico, Cluster Autoscaler, CloudWatch Logs</p>
+                        <p><strong>Resultado:</strong> Quatro opções de mitigação documentadas; correção em curso</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="study-tag">Em produção</div>
+                    <div class="project-icon">🧹</div>
+                    <h3>Auditoria Diária da Plataforma</h3><br>
+                    <p>
+                        Um protocolo matinal escrito com 21 verificações, apoiado por uma CLI em
+                        Python sem dependências externas que encontra desperdício e trabalho preso
+                        entre ambientes: pods em crash loop ou terminados por falta de memória,
+                        pods Spark zombie, clusters EMR órfãos, execuções de DAGs presas e locks
+                        órfãos no Hive Metastore.
+                    </p>
+                    <div class="project-details">
+                        <p><strong>Ferramentas:</strong> biblioteca padrão do Python, kubectl, AWS CLI</p>
+                        <p><strong>Destaque:</strong> Encontrou clusters EMR ociosos com 18 instâncias e sem encerramento automático</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="study-tag">Projeto pessoal</div>
+                    <div class="project-icon">🏛️</div>
+                    <h3>Site Serverless para um Rotary Club</h3><br>
+                    <p>
+                        Migração do site de uma entidade comunitária de uma plataforma alojada para
+                        a AWS, todo em Terraform: site estático em S3 e CloudFront, backend em
+                        API Gateway, Lambda e DynamoDB, DNS no Route 53 e alertas no SNS.
+                    </p>
+                    <div class="project-details">
+                        <p><strong>Stack:</strong> Terraform, S3, CloudFront, ACM, API Gateway, Lambda, DynamoDB, Route 53, SNS</p>
+                        <p><strong>Destaque:</strong> Estado do Terraform no S3 com locking nativo</p>
+                        <p>
+                            <a href="https://github.com/deldotore-r/aws-serverless-rotary" target="_blank" rel="noopener noreferrer">
+                                Ver repositório no GitHub →
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="study-tag">Projeto pessoal</div>
+                    <div class="project-icon">📊</div>
+                    <h3>Stack de Observabilidade de Infraestrutura</h3><br>
+                    <p>
+                        Monitorização para Apache Airflow. Utiliza Prometheus para recolha
+                        de métricas via StatsD e Grafana para visualização em tempo real de heartbeat,
+                        vazão e latência de tarefas.
+                    </p>
+                    <div class="project-details">
+                        <p><strong>Stack:</strong> Prometheus, Grafana, StatsD, PromQL, Docker</p>
+                        <p><strong>Destaque:</strong> PromQL com funções rate() para análise de performance instantânea</p>
+                        <p>
+                            <a href="https://github.com/deldotore-r/airflow-monitoring-stack" target="_blank" rel="noopener noreferrer">
+                                Ver repositório no GitHub →
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="study-tag">Projeto pessoal</div>
+                    <div class="project-icon">📈</div>
+                    <h3>Pipeline Automatizada de Câmbio</h3><br>
+                    <p>
+                        Pipeline de dados end-to-end com Apache Airflow. Monitoriza a cotação EUR/BRL,
+                        processa métricas com Pandas e publica automaticamente um dashboard responsivo
+                        através de GitLab CI/CD e Pages.
+                    </p>
+                    <div class="project-details">
+                        <p><strong>Stack:</strong> Airflow, Docker, Python (Pandas), GitLab CI/CD</p>
+                        <p><strong>Destaque:</strong> Arquitetura ETL desacoplada e deploy automatizado via SSH</p>
+                        <p>
+                            <a href="https://deldotore-r.gitlab.io/airflow-cambio-pipeline/" target="_blank" rel="noopener noreferrer">
+                                Ver Dashboard em Direto →
+                            </a>
+                            <br>
+                            <a href="https://gitlab.com/deldotore-r/airflow-cambio-pipeline" target="_blank" rel="noopener noreferrer" style="font-size: 0.85rem; opacity: 0.8;">
+                                Ver Código Fonte (GitLab) →
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Estudos & Formação</h2>
+
+            <div class="education-container">
+                <div class="education-block">
+                    <h3 class="education-title">Aprendizagem Contínua</h3>
+
+                    <div class="roadmap-entry">
+                        <span class="roadmap-tag">ATUAL</span>
+                        <div class="roadmap-content">
+                            <p><strong>Kubernetes:</strong> preparação para o exame CKA.</p>
+                            <p><strong>Apache Iceberg:</strong> funcionamento interno e modelo de concorrência.</p>
+                            <p><strong>dbt:</strong> fundamentos, rumo a analytics engineering.</p>
+                            <p><strong>Laboratório:</strong> Terraform, GitHub Actions e Linux.</p>
+                        </div>
+                    </div>
+
+                    <div class="roadmap-entry">
+                        <span class="roadmap-tag future">FUTURO</span>
+                        <div class="roadmap-content">
+                            <p>Tuning de performance de Spark e AWS Certified Data Engineer – Associate.</p>
+                        </div>
+                    </div>
+
+                    <div class="roadmap-goal">
+                        <strong>Objetivo:</strong> Aprofundar a engenharia de plataformas para cargas de dados em Kubernetes.
+                    </div>
+                </div>
+
+                <div class="education-block">
+                    <h3 class="education-title">Certificações</h3>
+
+                    <div class="cert-grid">
+                        <div class="cert-badge">
+                            <span class="cert-status-dot in-progress"></span>
+                            <div class="cert-text">
+                                <strong>Certified Kubernetes Administrator (CKA)</strong>
+                                <span>Em curso</span>
+                            </div>
+                        </div>
+
+                        <div class="cert-badge">
+                            <span class="cert-status-dot target"></span>
+                            <div class="cert-text">
+                                <strong>AWS Certified Data Engineer – Associate</strong>
+                                <span>Alvo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Blog & Artigos Técnicos</h2>
+
+            <br>
+
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="study-tag">Artigo</div>
+                    <h3 class="skill-title">Do Quartel ao Cloud</h3>
+                    <p class="skill-description">Como os princípios de disciplina e método da Polícia Militar se aplicam à gestão de Cloud e DevOps.</p>
+                    <a href="blog/do-quartel-ao-cloud.html" class="nav-link" style="color: var(--primary-color); margin-top: 1rem; display: inline-block; font-weight: 600;">Ler artigo completo →</a>
+                </div>
+
+                <article class="blog-card">
+                    <div class="study-tag">Artigo</div>
+                    <h3>Como Alojar um Site Estático na AWS por Menos de 2 Dólares por Mês</h3>
+                    <p>S3, CloudFront e HTTPS, passo a passo: a configuração por trás deste site.</p>
+                    <a href="https://www.linkedin.com/pulse/como-hospedar-um-site-est%C3%A1tico-na-aws-por-menos-de-2m%C3%AAs-del-dotore-4jxve/" class="blog-link">Ler artigo →</a>
+                </article>
+
+                <article class="blog-card">
+                    <div class="study-tag">Artigo</div>
+                    <h3>Anatomia de uma Pipeline CI/CD com AWS</h3>
+                    <p>Como orquestrar GitHub Actions, S3 e CloudFront para entregas globais resilientes.</p>
+                    <a href="https://www.linkedin.com/pulse/al%C3%A9m-do-c%C3%B3digo-anatomia-de-uma-pipeline-cicd-com-aws-e-del-dotore-3rwwe/" class="blog-link">Ler artigo →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section">
+        <div class="container">
+            <h2 class="section-title">Vamos conversar</h2>
+
+            <div class="contact-grid">
+                <a href="mailto:deldotore@gmail.com" class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <h3>Email</h3>
+                    <p>deldotore@gmail.com</p>
+                </a>
+
+                <a href="https://www.linkedin.com/in/reinaldo-del-dotore/" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <div class="contact-icon">💼</div>
+                    <h3>LinkedIn</h3>
+                    <p>O meu perfil</p>
+                </a>
+
+                <a href="https://github.com/deldotore-r" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <div class="contact-icon">🔗</div>
+                    <h3>GitHub</h3>
+                    <p>Os meus repositórios</p>
+                </a>
+
+                <a href="docs/Reinaldo-Del-Dotore-CV-PT.pdf" class="contact-card" target="_blank" rel="noopener noreferrer" download>
+                    <div class="contact-icon">📕</div>
+                    <h3>CV</h3>
+                    <p>Download PDF</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; deldotore 2026</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
