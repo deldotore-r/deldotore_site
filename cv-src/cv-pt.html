@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Reinaldo Del Dotore, currículo</title>
+    <link rel="stylesheet" href="cv.css">
+</head>
+<body>
+    <header>
+        <h1>Reinaldo Del Dotore</h1>
+        <p class="role">Data Platform Engineer</p>
+        <p class="contact">
+            <span>Guarda, Portugal</span><span><a href="mailto:deldotore@gmail.com">deldotore@gmail.com</a></span><span><a href="https://www.linkedin.com/in/reinaldo-del-dotore/">linkedin.com/in/reinaldo-del-dotore</a></span><span><a href="https://github.com/deldotore-r">github.com/deldotore-r</a></span><span><a href="https://deldotore.com/index-pt.html">deldotore.com</a></span>
+        </p>
+    </header>
+
+    <p class="summary">Data Platform Engineer operando uma plataforma analítica em produção no Amazon EKS: Airflow, Spark sobre Kubernetes, Apache Iceberg, Hive Metastore, Dremio, NiFi, RisingWave e Amazon EMR. Meu trabalho se concentra em triagem de incidentes, investigação de causa raiz e ferramentas de operação. Antes da TI, servi 30 anos como oficial da Polícia Militar do Estado de São Paulo, em funções clínicas e depois administrativas.</p>
+
+    <section>
+        <h2>Experiência</h2>
+
+        <div class="job">
+            <div class="job-head">
+                <h3>Data Platform Engineer, COCUS Portugal</h3>
+                <p class="dates">Março de 2026 até hoje</p>
+            </div>
+            <p class="context">Remoto. Equipe de infraestrutura de uma plataforma analítica em produção de uma empresa do setor energético.</p>
+            <ul>
+                <li>Verificações diárias de saúde e triagem de incidentes nos ambientes de produção e pré-produção, separando falhas da plataforma de falhas da aplicação antes de qualquer alteração. Escala de plantão 24/7 desde setembro de 2026.</li>
+                <li>Diagnostiquei lentidão severa em um pipeline de ingestão Iceberg: dois anos de commits sem expiração de snapshots tinham levado os metadados da tabela a mais de 5.000 vezes o tamanho dos dados. Entreguei relatório de investigação e plano de correção; uma varredura posterior encontrou dezenas de tabelas com o mesmo padrão.</li>
+                <li>Rastreei falhas de drivers Spark em nós recém-escalados até um intervalo de 2 a 3,5 minutos entre o nó ficar Ready e a rede dos pods convergir, com medições ao vivo e logs de auditoria do API server do EKS. Documentei quatro opções de mitigação para a decisão da plataforma.</li>
+                <li>Escrevi um protocolo matinal de 21 verificações e uma CLI em Python sem dependências externas (kubectl e AWS CLI) para auditorias em vários ambientes. Entre os achados, clusters EMR ociosos com 18 instâncias e sem encerramento automático, e execuções de DAG travadas havia quase um mês.</li>
+                <li>Rastreei falhas recorrentes de ingestão até locks órfãos no Hive Metastore; revisão de custos de clusters EMR rodando só On-Demand, com a migração para Spot identificada como economia clara.</li>
+                <li>Relatórios de causa raiz e runbooks para as equipes de plataforma e de aplicação.</li>
+            </ul>
+        </div>
+
+        <div class="job keep">
+            <div class="job-head">
+                <h3>Requalificação em TI</h3>
+                <p class="dates">após a passagem para a reserva em 2020</p>
+            </div>
+            <ul>
+                <li>Estudo autodidata, laboratórios caseiros e projetos pessoais em Linux, AWS, Terraform, Docker e Apache Airflow.</li>
+            </ul>
+        </div>
+
+        <div class="job keep">
+            <div class="job-head">
+                <h3>Oficial, Polícia Militar do Estado de São Paulo (PMESP), Brasil</h3>
+                <p class="dates">1990 a 2020</p>
+            </div>
+            <p class="context">Na reserva como Major.</p>
+            <ul>
+                <li>Cirurgião-dentista no serviço odontológico da corporação e depois funções administrativas em assessoria jurídica, inteligência, compras e pessoal.</li>
+                <li>Coordenação de equipes multidisciplinares com mais de 100 pessoas.</li>
+                <li>Relatórios gerenciais, indicadores de desempenho, auditoria e conformidade normativa.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Competências</h2>
+        <dl class="label-list">
+            <div><dt>Em produção</dt><dd>Kubernetes no Amazon EKS, Apache Airflow 2.8, Apache Spark sobre Kubernetes, Apache Iceberg, Hive Metastore, Dremio, NiFi, RisingWave, AWS (EMR, S3, IAM, CloudWatch Logs), Prometheus, Grafana</dd></div>
+            <div><dt>Programação</dt><dd>Python, Bash, SQL</dd></div>
+            <div><dt>Laboratórios e projetos</dt><dd>Terraform, GitHub Actions, GitLab CI, Docker Compose, AWS serverless (Lambda, API Gateway, DynamoDB, CloudFront, Route 53), Linux</dd></div>
+            <div><dt>Estudos</dt><dd>Preparando o exame CKA; estudando o funcionamento interno do Apache Iceberg e dbt. Na sequência: tuning de performance de Spark e AWS Certified Data Engineer – Associate.</dd></div>
+        </dl>
+    </section>
+
+    <section class="keep">
+        <h2>Projetos pessoais</h2>
+        <ul class="projects">
+            <li><strong>Site serverless para um Rotary Club local.</strong> Terraform: S3, CloudFront, ACM, API Gateway, Lambda, DynamoDB, Route 53, SNS. github.com/deldotore-r/aws-serverless-rotary</li>
+            <li><strong>Stack de monitoramento para Airflow.</strong> StatsD exporter, Prometheus e Grafana com Docker Compose. github.com/deldotore-r/airflow-monitoring-stack</li>
+            <li><strong>Pipeline de câmbio.</strong> Duas DAGs Airflow desacopladas e um relatório em Plotly publicado pelo GitLab CI no GitLab Pages. gitlab.com/deldotore-r/airflow-cambio-pipeline</li>
+        </ul>
+    </section>
+
+    <section class="keep">
+        <div class="two-col">
+            <div>
+                <h2>Formação</h2>
+                <p>Odontologia, Universidade de São Paulo (USP)</p>
+                <p>Direito, UNIESP</p>
+            </div>
+            <div>
+                <h2>Idiomas</h2>
+                <p>Português: nativo</p>
+                <p>Inglês: leitura B2, escrita B1, conversação A2</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

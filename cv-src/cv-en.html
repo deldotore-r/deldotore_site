@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reinaldo Del Dotore, CV</title>
+    <link rel="stylesheet" href="cv.css">
+</head>
+<body>
+    <header>
+        <h1>Reinaldo Del Dotore</h1>
+        <p class="role">Data Platform Engineer</p>
+        <p class="contact">
+            <span>Guarda, Portugal</span><span><a href="mailto:deldotore@gmail.com">deldotore@gmail.com</a></span><span><a href="https://www.linkedin.com/in/reinaldo-del-dotore/">linkedin.com/in/reinaldo-del-dotore</a></span><span><a href="https://github.com/deldotore-r">github.com/deldotore-r</a></span><span><a href="https://deldotore.com">deldotore.com</a></span>
+        </p>
+    </header>
+
+    <p class="summary">Data Platform Engineer operating a production analytics platform on Amazon EKS: Airflow, Spark on Kubernetes, Apache Iceberg, Hive Metastore, Dremio, NiFi, RisingWave and Amazon EMR. My work centers on incident triage, root-cause investigation and operational tooling. Before IT, I served 30 years as an officer in the São Paulo Military Police, in clinical and then administrative roles.</p>
+
+    <section>
+        <h2>Experience</h2>
+
+        <div class="job">
+            <div class="job-head">
+                <h3>Data Platform Engineer, COCUS Portugal</h3>
+                <p class="dates">March 2026 to present</p>
+            </div>
+            <p class="context">Remote. Infrastructure team for a production analytics platform of a company in the energy sector.</p>
+            <ul>
+                <li>Daily health checks and incident triage across production and pre-production environments, separating platform faults from application faults before anything is changed. 24/7 on-call rotation since September 2026.</li>
+                <li>Diagnosed severe slowdowns in an Iceberg ingestion pipeline: two years of commits without snapshot expiration had grown table metadata to more than 5,000 times the size of the data. Delivered an investigation report and remediation plan; a follow-up scan flagged dozens of tables with the same pattern.</li>
+                <li>Traced Spark driver failures on newly scaled-up nodes to a 2 to 3.5 minute gap between node Ready and pod network convergence, using live measurements and EKS API server audit logs. Documented four mitigation options for the platform decision.</li>
+                <li>Wrote a 21-check morning verification protocol and a dependency-free Python CLI (kubectl and AWS CLI) for multi-environment audits. Findings included idle EMR clusters with 18 instances and no auto-termination, and DAG runs stuck for almost a month.</li>
+                <li>Traced recurring ingestion failures to orphaned Hive Metastore locks; cost review of EMR clusters running fully On-Demand, with Spot identified as a clear saving.</li>
+                <li>Root-cause write-ups and runbooks for platform and application teams.</li>
+            </ul>
+        </div>
+
+        <div class="job keep">
+            <div class="job-head">
+                <h3>Career change into IT</h3>
+                <p class="dates">after retiring in 2020</p>
+            </div>
+            <ul>
+                <li>Self-directed study, home labs and personal projects in Linux, AWS, Terraform, Docker and Apache Airflow.</li>
+            </ul>
+        </div>
+
+        <div class="job keep">
+            <div class="job-head">
+                <h3>Officer, São Paulo Military Police (PMESP), Brazil</h3>
+                <p class="dates">1990 to 2020</p>
+            </div>
+            <p class="context">Retired as a Major.</p>
+            <ul>
+                <li>Dental surgeon in the force's dental service, then administrative roles in legal advisory, intelligence, procurement and personnel.</li>
+                <li>Coordinated multidisciplinary teams of more than 100 people.</li>
+                <li>Management reports, performance indicators, audits and regulatory compliance.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <dl class="label-list">
+            <div><dt>In production</dt><dd>Kubernetes on Amazon EKS, Apache Airflow 2.8, Apache Spark on Kubernetes, Apache Iceberg, Hive Metastore, Dremio, NiFi, RisingWave, AWS (EMR, S3, IAM, CloudWatch Logs), Prometheus, Grafana</dd></div>
+            <div><dt>Programming</dt><dd>Python, Bash, SQL</dd></div>
+            <div><dt>Labs and projects</dt><dd>Terraform, GitHub Actions, GitLab CI, Docker Compose, AWS serverless (Lambda, API Gateway, DynamoDB, CloudFront, Route 53), Linux</dd></div>
+            <div><dt>Learning</dt><dd>Preparing for the CKA exam; studying Apache Iceberg internals and dbt. Next: Spark performance tuning and AWS Certified Data Engineer – Associate.</dd></div>
+        </dl>
+    </section>
+
+    <section class="keep">
+        <h2>Personal projects</h2>
+        <ul class="projects">
+            <li><strong>Serverless website for a local Rotary Club.</strong> Terraform: S3, CloudFront, ACM, API Gateway, Lambda, DynamoDB, Route 53, SNS. github.com/deldotore-r/aws-serverless-rotary</li>
+            <li><strong>Airflow monitoring stack.</strong> StatsD exporter, Prometheus and Grafana with Docker Compose. github.com/deldotore-r/airflow-monitoring-stack</li>
+            <li><strong>Exchange-rate pipeline.</strong> Two decoupled Airflow DAGs and a Plotly report published by GitLab CI to GitLab Pages. gitlab.com/deldotore-r/airflow-cambio-pipeline</li>
+        </ul>
+    </section>
+
+    <section class="keep">
+        <div class="two-col">
+            <div>
+                <h2>Education</h2>
+                <p>Bachelor of Dental Surgery, University of São Paulo (USP)</p>
+                <p>Bachelor of Laws, UNIESP</p>
+            </div>
+            <div>
+                <h2>Languages</h2>
+                <p>Portuguese: native</p>
+                <p>English: reading B2, writing B1, speaking A2</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
